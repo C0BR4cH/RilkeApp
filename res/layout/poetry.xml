@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/story_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/story_Titel"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/story_StoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/story_Story1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/story_StoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/story_Text1" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/story_btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/story_Previous" />
+        <Button
+            android:id="@+id/story_btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/story_Home" />
+        <Button
+            android:id="@+id/story_btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/story_Next" />
+    </LinearLayout>
+</LinearLayout>
