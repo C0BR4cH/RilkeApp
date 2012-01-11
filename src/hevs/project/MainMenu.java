@@ -52,12 +52,18 @@ public class MainMenu extends Activity
 	    	}
 	    	if(v==findViewById(R.id.btnStories))
 	    	{
-				Intent stories = new Intent(MainMenu.this,Stories.class);
+	    		Bundle bundle = new Bundle();
+	    		bundle.putString("param1", "stories");
+	    		Intent stories = new Intent(MainMenu.this,StoriesPoetry.class);
+	    		stories.putExtras(bundle);
 				MainMenu.this.startActivity(stories);
 	    	}
 	    	if(v==findViewById(R.id.btnPeotry))
 	    	{
-				Intent poetry = new Intent(MainMenu.this,Stories.class);
+	    		Bundle bundle = new Bundle();
+	    		bundle.putString("param1", "poetry");
+	    		Intent poetry = new Intent(MainMenu.this,StoriesPoetry.class);
+	    		poetry.putExtras(bundle);
 				MainMenu.this.startActivity(poetry);
 	    	}
 	    }
