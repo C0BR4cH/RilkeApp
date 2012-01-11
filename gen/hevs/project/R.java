@@ -50,17 +50,16 @@ public final class R {
         public static final int stories=0x7f030002;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int hello=0x7f040000;
-        public static final int menu_News=0x7f040003;
-        public static final int menu_Poetry=0x7f040005;
-        public static final int menu_Quiz=0x7f040002;
-        public static final int menu_Stories=0x7f040004;
-        public static final int story_Home=0x7f040008;
-        public static final int story_Next=0x7f040007;
-        public static final int story_Previous=0x7f040006;
-        public static final int story_Story1=0x7f04000a;
-        public static final int story_Text1=0x7f04000b;
-        public static final int story_Titel=0x7f040009;
+        public static final int app_name=0x7f040000;
+        public static final int menu_News=0x7f040002;
+        public static final int menu_Poetry=0x7f040004;
+        public static final int menu_Quiz=0x7f040001;
+        public static final int menu_Stories=0x7f040003;
+        public static final int story_Home=0x7f040007;
+        public static final int story_Next=0x7f040006;
+        public static final int story_Previous=0x7f040005;
+        public static final int story_Story1=0x7f040009;
+        public static final int story_Text1=0x7f04000a;
+        public static final int story_Titel=0x7f040008;
     }
 }
