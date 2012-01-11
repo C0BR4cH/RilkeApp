@@ -18,9 +18,6 @@ public final class R {
         public static final int btnPeotry=0x7f050009;
         public static final int btnQuiz=0x7f050007;
         public static final int btnStories=0x7f05000b;
-        public static final int button1=0x7f050018;
-        public static final int button2=0x7f050019;
-        public static final int button3=0x7f05001a;
         public static final int imageView1=0x7f050002;
         public static final int layoutQuiz=0x7f05000c;
         public static final int reNews=0x7f050004;
@@ -32,10 +29,15 @@ public final class R {
         public static final int rwQuiz=0x7f050006;
         public static final int rwStories=0x7f05000a;
         public static final int rwTitle=0x7f05000d;
+        public static final int story_StoryText=0x7f050019;
+        public static final int story_StoryTitle=0x7f050018;
+        public static final int story_Title=0x7f050017;
+        public static final int story_btnHome=0x7f05001b;
+        public static final int story_btnNext=0x7f05001c;
+        public static final int story_btnPrev=0x7f05001a;
         public static final int tableLayout1=0x7f050000;
         public static final int tableRow1=0x7f050001;
         public static final int textView1=0x7f050003;
-        public static final int textView2=0x7f050017;
         public static final int txtAnswerA=0x7f050012;
         public static final int txtAnswerB=0x7f050014;
         public static final int txtAnswerC=0x7f050016;
@@ -54,5 +56,11 @@ public final class R {
         public static final int menu_Poetry=0x7f040005;
         public static final int menu_Quiz=0x7f040002;
         public static final int menu_Stories=0x7f040004;
+        public static final int story_Home=0x7f040008;
+        public static final int story_Next=0x7f040007;
+        public static final int story_Previous=0x7f040006;
+        public static final int story_Story1=0x7f04000a;
+        public static final int story_Text1=0x7f04000b;
+        public static final int story_Titel=0x7f040009;
     }
 }

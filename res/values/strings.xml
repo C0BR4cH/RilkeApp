@@ -6,4 +6,10 @@
     <string name="menu_News">News</string>
     <string name="menu_Stories">Stories</string>
     <string name="menu_Poetry">Poetry</string>
+    <string name="story_Previous">Prev</string>
+    <string name="story_Next">Next</string>
+    <string name="story_Home">Home</string>
+    <string name="story_Titel">Stories</string>
+    <string name="story_Story1">TitleOfStoryOne</string>
+    <string name="story_Text1">HugeTextOfStoryOne</string>
 </resources>
