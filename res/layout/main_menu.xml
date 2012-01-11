@@ -5,15 +5,15 @@
             <TextView android:text="Rilke Festival Logo" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content"></TextView>
         </TableRow>
         <TableRow android:id="@+id/reNews" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <Button android:text="News" android:id="@+id/btnNews" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+            <Button android:text="@string/menu_News" android:id="@+id/btnNews" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
         </TableRow>
         <TableRow android:id="@+id/rwQuizz" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <Button android:text="Quiz" android:id="@+id/btnQuizz" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+            <Button android:text="@string/menu_Quiz" android:id="@+id/btnQuizz" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
         </TableRow>
         <TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <Button android:text="ToDefine" android:id="@+id/button3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+            <Button android:text="@string/menu_Poetry" android:id="@+id/button3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
         </TableRow>
         <TableRow android:id="@+id/tableRow4" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center|center_horizontal">
-            <Button android:text="ToDefine" android:id="@+id/button4" android:gravity="center_vertical" android:layout_gravity="center|center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+            <Button android:text="@string/menu_Stories" android:id="@+id/button4" android:gravity="center_vertical" android:layout_gravity="center|center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
         </TableRow>
     </TableLayout>
