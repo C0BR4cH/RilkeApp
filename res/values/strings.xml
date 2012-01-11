@@ -8,7 +8,10 @@
     <string name="story_Previous">Prev</string>
     <string name="story_Next">Next</string>
     <string name="story_Home">Home</string>
-    <string name="story_Titel">Stories</string>
+    <string name="story_Title">Stories</string>
     <string name="story_Story1">TitleOfStoryOne</string>
     <string name="story_Text1">HugeTextOfStoryOne</string>
+    <string name="poetry_Title">Poetry</string>
+    <string name="poetry_Poetry1">Poetry1Title</string>
+    <string name="poetry_Text1">PoetryTextOne</string>
 </resources>

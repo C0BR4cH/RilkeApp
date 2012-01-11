@@ -57,11 +57,14 @@ public final class R {
         public static final int menu_Poetry=0x7f040004;
         public static final int menu_Quiz=0x7f040001;
         public static final int menu_Stories=0x7f040003;
+        public static final int poetry_Poetry1=0x7f04000c;
+        public static final int poetry_Text1=0x7f04000d;
+        public static final int poetry_Title=0x7f04000b;
         public static final int story_Home=0x7f040007;
         public static final int story_Next=0x7f040006;
         public static final int story_Previous=0x7f040005;
         public static final int story_Story1=0x7f040009;
         public static final int story_Text1=0x7f04000a;
-        public static final int story_Titel=0x7f040008;
+        public static final int story_Title=0x7f040008;
     }
 }
