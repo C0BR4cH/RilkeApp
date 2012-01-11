@@ -2,4 +2,8 @@
 <resources>
     <string name="hello">Hello World, RilkeAppActivity!</string>
     <string name="app_name">RilkeApp</string>
+    <string name="menu_Quiz">Quiz</string>
+    <string name="menu_News">News</string>
+    <string name="menu_Stories">Stories</string>
+    <string name="menu_Poetry">Poetry</string>
 </resources>
