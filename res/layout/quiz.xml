@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout android:id="@+id/layoutQuiz" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+        <TableRow android:id="@+id/rwTitle" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:text="Rilke Quiz" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/txtTitle" android:layout_width="wrap_content"></TextView>
+            <TextView android:text="Score: 1337" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:id="@+id/txtScore" android:layout_width="wrap_content"></TextView>
+        </TableRow>
+        <TableRow android:id="@+id/rwImage" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+        <TableRow android:id="@+id/rwAnswerA" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:text="Answer A" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/txtAnswerA" android:layout_width="wrap_content"></TextView>
+        </TableRow>
+        <TableRow android:id="@+id/rwAnswerB" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:text="Answer B" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/txtAnswerB" android:layout_width="wrap_content"></TextView>
+        </TableRow>
+        <TableRow android:id="@+id/rwAnswerC" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:text="Answer C" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/txtAnswerC" android:layout_width="wrap_content"></TextView>
+        </TableRow>
+    </TableLayout>
