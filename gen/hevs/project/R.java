@@ -14,6 +14,7 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
+        public static final int LinearLayout1=0x7f050017;
         public static final int btnNews=0x7f050005;
         public static final int btnPeotry=0x7f050009;
         public static final int btnQuiz=0x7f050007;
@@ -29,12 +30,12 @@ public final class R {
         public static final int rwQuiz=0x7f050006;
         public static final int rwStories=0x7f05000a;
         public static final int rwTitle=0x7f05000d;
-        public static final int story_StoryText=0x7f050019;
-        public static final int story_StoryTitle=0x7f050018;
-        public static final int story_Title=0x7f050017;
-        public static final int story_btnHome=0x7f05001b;
-        public static final int story_btnNext=0x7f05001c;
-        public static final int story_btnPrev=0x7f05001a;
+        public static final int story_StoryText=0x7f05001a;
+        public static final int story_StoryTitle=0x7f050019;
+        public static final int story_Title=0x7f050018;
+        public static final int story_btnHome=0x7f05001c;
+        public static final int story_btnNext=0x7f05001d;
+        public static final int story_btnPrev=0x7f05001b;
         public static final int tableLayout1=0x7f050000;
         public static final int tableRow1=0x7f050001;
         public static final int textView1=0x7f050003;
