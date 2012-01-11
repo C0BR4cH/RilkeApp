@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal" android:layout_gravity="right">
     <TextView
         android:id="@+id/story_Title"
         android:layout_width="wrap_content"
@@ -29,7 +29,14 @@
                 android:id="@+id/story_StoryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/story_Text1" />
+                android:text="@string/story_Text1" 
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            <TextView
+                android:id="@+id/story_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/story_author1"
+                android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="italic" android:layout_gravity="right"/>
         </LinearLayout>
     </ScrollView>
     <LinearLayout

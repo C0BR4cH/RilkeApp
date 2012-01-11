@@ -33,9 +33,10 @@ public final class R {
         public static final int story_StoryText=0x7f05001a;
         public static final int story_StoryTitle=0x7f050019;
         public static final int story_Title=0x7f050018;
-        public static final int story_btnHome=0x7f05001c;
-        public static final int story_btnNext=0x7f05001d;
-        public static final int story_btnPrev=0x7f05001b;
+        public static final int story_author=0x7f05001b;
+        public static final int story_btnHome=0x7f05001d;
+        public static final int story_btnNext=0x7f05001e;
+        public static final int story_btnPrev=0x7f05001c;
         public static final int tableLayout1=0x7f050000;
         public static final int tableRow1=0x7f050001;
         public static final int textView1=0x7f050003;
@@ -59,11 +60,13 @@ public final class R {
         public static final int poetry_Poetry1=0x7f04000c;
         public static final int poetry_Text1=0x7f04000d;
         public static final int poetry_Title=0x7f04000b;
+        public static final int poetry_author1=0x7f04000f;
         public static final int story_Home=0x7f040007;
         public static final int story_Next=0x7f040006;
         public static final int story_Previous=0x7f040005;
         public static final int story_Story1=0x7f040009;
         public static final int story_Text1=0x7f04000a;
         public static final int story_Title=0x7f040008;
+        public static final int story_author1=0x7f04000e;
     }
 }
