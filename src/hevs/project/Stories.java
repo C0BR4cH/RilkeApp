@@ -9,5 +9,7 @@ public class Stories extends Activity{
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stories);
+
+//        R.id.story_StoryText = R.string.story_Story1;
     }
 }
