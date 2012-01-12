@@ -23,7 +23,9 @@ public class Quiz extends Activity
 	private TextView answerA;
 	private TextView answerB;
 	private TextView answerC;
-	private Button btnOk;
+	private Button btnA;
+	private Button btnB;
+	private Button btnC;
 	
     public void onCreate(Bundle savedInstanceState)
     {
@@ -35,7 +37,15 @@ public class Quiz extends Activity
     {
 	    public void onClick(View v)
 	    {
-	    	if(v==findViewById(R.id.btnOk))
+	    	if(v==findViewById(R.id.btnA))
+	    	{
+	    		
+	    	}
+	    	if(v==findViewById(R.id.btnB))
+	    	{
+	    		
+	    	}
+	    	if(v==findViewById(R.id.btnC))
 	    	{
 	    		
 	    	}

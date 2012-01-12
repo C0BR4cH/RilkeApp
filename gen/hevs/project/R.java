@@ -28,10 +28,12 @@ public final class R {
     public static final class id {
         public static final int LinearLayout1=0x7f060000;
         public static final int TLBody=0x7f060004;
+        public static final int btnA=0x7f060022;
+        public static final int btnB=0x7f060023;
+        public static final int btnC=0x7f060024;
         public static final int btnGallery=0x7f060007;
         public static final int btnLocationSketch=0x7f060012;
         public static final int btnNews=0x7f060006;
-        public static final int btnOk=0x7f060022;
         public static final int btnPeotry=0x7f06000c;
         public static final int btnQuiz=0x7f06000f;
         public static final int btnRoute=0x7f060010;
@@ -45,7 +47,7 @@ public final class R {
         public static final int rwAnswerA=0x7f06001b;
         public static final int rwAnswerB=0x7f06001d;
         public static final int rwAnswerC=0x7f06001f;
-        public static final int rwBtnOk=0x7f060021;
+        public static final int rwButtons=0x7f060021;
         public static final int rwImage=0x7f060018;
         public static final int rwPoetry=0x7f06000b;
         public static final int rwQuestion=0x7f060019;
@@ -53,13 +55,13 @@ public final class R {
         public static final int rwRoute=0x7f060011;
         public static final int rwStories=0x7f06000e;
         public static final int rwTitle=0x7f060015;
-        public static final int story_StoryText=0x7f060025;
-        public static final int story_StoryTitle=0x7f060024;
-        public static final int story_Title=0x7f060023;
-        public static final int story_author=0x7f060026;
-        public static final int story_btnHome=0x7f060028;
-        public static final int story_btnNext=0x7f060029;
-        public static final int story_btnPrev=0x7f060027;
+        public static final int story_StoryText=0x7f060027;
+        public static final int story_StoryTitle=0x7f060026;
+        public static final int story_Title=0x7f060025;
+        public static final int story_author=0x7f060028;
+        public static final int story_btnHome=0x7f06002a;
+        public static final int story_btnNext=0x7f06002b;
+        public static final int story_btnPrev=0x7f060029;
         public static final int tableRow1=0x7f060001;
         public static final int textView1=0x7f060003;
         public static final int txtAnswerA=0x7f06001c;

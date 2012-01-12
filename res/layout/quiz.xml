@@ -19,7 +19,9 @@
         <TableRow android:id="@+id/rwAnswerC" android:layout_width="wrap_content" android:layout_height="wrap_content">
             <TextView android:text="Answer C" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/txtAnswerC" android:layout_width="wrap_content"></TextView>
         </TableRow>
-        <TableRow android:id="@+id/rwBtnOk" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <Button android:text="Ok" android:id="@+id/btnOk" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <TableRow android:id="@+id/rwButtons" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:text="A" android:id="@+id/btnA" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+            <Button android:text="B" android:id="@+id/btnB" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+            <Button android:text="C" android:id="@+id/btnC" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
         </TableRow>
     </TableLayout>
