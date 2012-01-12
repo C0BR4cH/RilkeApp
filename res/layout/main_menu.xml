@@ -16,4 +16,7 @@
         <TableRow android:id="@+id/rwStories" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center|center_horizontal">
             <Button android:text="@string/menu_Stories" android:id="@+id/btnStories" android:gravity="center_vertical" android:layout_gravity="center|center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
         </TableRow>
+        <TableRow android:id="@+id/rwRoute" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+            <Button android:id="@+id/btnRoute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_Route" />
+        </TableRow>
     </TableLayout>
