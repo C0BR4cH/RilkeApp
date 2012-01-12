@@ -27,7 +27,6 @@ public class Quiz extends Activity
 	private Button btnA;
 	private Button btnB;
 	private Button btnC;
-	private int answer;
 	private int correct;
 	private int currentSet;
 	private int[] answers;
@@ -36,24 +35,37 @@ public class Quiz extends Activity
 	private String[] answersB;
 	private String[] answersC;
 	private Resources res;
+	private OnClickListener btnListener;
 	
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
+        currentSet=-1;
+        
+        // Init TextViews
         question=(TextView)findViewById(R.id.txtQuestion);
         answerA=(TextView)findViewById(R.id.txtAnswerA);
         answerB=(TextView)findViewById(R.id.txtAnswerB);
         answerC=(TextView)findViewById(R.id.txtAnswerC);
         correctNum=(TextView)findViewById(R.id.txtCorrectNum);
-        res=getResources();
-        currentSet=0;
         
+        // Init string resources
+        res=getResources();
         questions=res.getStringArray(R.array.quiz_questions);
         answersA=res.getStringArray(R.array.quiz_answersA);
         answersB=res.getStringArray(R.array.quiz_answersB);
         answersC=res.getStringArray(R.array.quiz_answersC);
         answers=res.getIntArray(R.array.quiz_answers);
+        
+        // Init Listener and add it to buttons
+        btnListener=new ButtonListener();
+        btnA.setOnClickListener(btnListener);
+        btnB.setOnClickListener(btnListener);
+        btnC.setOnClickListener(btnListener);
+        
+        // Set first questions/answer set
+        nextQuizSet();
     }
     
     private void nextQuizSet()
