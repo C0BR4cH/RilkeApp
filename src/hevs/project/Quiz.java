@@ -18,7 +18,6 @@ import android.widget.TextView;
 
 public class Quiz extends Activity
 {
-	private TextView score;
 	private TextView question;
 	private TextView answerA;
 	private TextView answerB;
@@ -26,11 +25,19 @@ public class Quiz extends Activity
 	private Button btnA;
 	private Button btnB;
 	private Button btnC;
+	private int answer;
+	private int correct;
+	private int currentSet;
 	
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
+    }
+    
+    private void nextQuizSet()
+    {
+    	question.setText("blubb");
     }
     
     public class ButtonListener implements OnClickListener
