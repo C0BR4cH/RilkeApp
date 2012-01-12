@@ -28,7 +28,7 @@ public class MainMenu extends Activity
 		buttons = res.getStringArray(R.array.menu_titles);
 		
 		//fill gridview with buttons
-		GridView gridview = (GridView) findViewById(R.id.GridView_Buttons);  
+		GridView gridview = (GridView) findViewById(R.id.GridView_Buttons);
 		gridview.setAdapter(new ButtonAdapter(this)); 
 	}
 
@@ -63,7 +63,7 @@ public class MainMenu extends Activity
 				// if it's not recycled, initialize some attributes  
 				btn = new Button(mContext);  
 				btn.setLayoutParams(new GridView.LayoutParams(100, 55));  
-				btn.setPadding(8, 8, 8, 8);  
+				btn.setPadding(6, 6, 6, 6);  
 			}  
 			else {  
 				btn = (Button) convertView;  
@@ -72,7 +72,7 @@ public class MainMenu extends Activity
 			// filenames is an array of strings  
 			btn.setTextColor(Color.WHITE);  
 			btn.setBackgroundResource(R.drawable.button); 
-			btn.setId(position);  
+			btn.setId(position);
 			// Set the onclicklistener so that pressing the button fires an event  
 			// We will need to implement this onclicklistner.  
 			btn.setOnClickListener(new ButtonListener(position)); 

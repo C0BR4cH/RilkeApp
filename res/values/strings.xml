@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Rilke Festival Application</string>
-    <string name="menu_Title">Rilke Festival</string><string name="menu_footer">Project blablabla</string>
+    <string name="menu_Title">Rilke Festival</string><string name="menu_footer">(c) 2012 Hevs</string>
     <string name="menu_iconDescription">default icon</string><string name="story_Previous">Prev</string>
     <string name="story_Next">Next</string>
     <string name="story_Home">Home</string>
