@@ -110,4 +110,17 @@
         <item>1931</item>
         <item>Visp</item>
     </string-array>
+    <integer-array name="quiz_answers">
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
 </resources>

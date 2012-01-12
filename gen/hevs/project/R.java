@@ -12,6 +12,7 @@ public final class R {
         public static final int poetry_Text=0x7f050001;
         public static final int poetry_author=0x7f050000;
         public static final int poetry_poetryTitle=0x7f050002;
+        public static final int quiz_answers=0x7f05000a;
         public static final int quiz_answersA=0x7f050007;
         public static final int quiz_answersB=0x7f050008;
         public static final int quiz_answersC=0x7f050009;
