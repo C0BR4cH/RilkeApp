@@ -9,22 +9,25 @@ package hevs.project;
 
 public final class R {
     public static final class array {
-        public static final int poetry_Text=0x7f050001;
-        public static final int poetry_author=0x7f050000;
-        public static final int poetry_poetryTitle=0x7f050002;
-        public static final int quiz_answers=0x7f05000a;
-        public static final int quiz_answersA=0x7f050007;
-        public static final int quiz_answersB=0x7f050008;
-        public static final int quiz_answersC=0x7f050009;
-        public static final int quiz_questions=0x7f050006;
-        public static final int story_author=0x7f050003;
-        public static final int story_storyTitle=0x7f050005;
-        public static final int story_text=0x7f050004;
+        public static final int menu_titles=0x7f050000;
+        public static final int poetry_Text=0x7f050002;
+        public static final int poetry_author=0x7f050001;
+        public static final int poetry_poetryTitle=0x7f050003;
+        public static final int quiz_answers=0x7f05000b;
+        public static final int quiz_answersA=0x7f050008;
+        public static final int quiz_answersB=0x7f050009;
+        public static final int quiz_answersC=0x7f05000a;
+        public static final int quiz_questions=0x7f050007;
+        public static final int story_author=0x7f050004;
+        public static final int story_storyTitle=0x7f050006;
+        public static final int story_text=0x7f050005;
     }
     public static final class attr {
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
+        public static final int button=0x7f020000;
+        public static final int icon=0x7f020001;
+        public static final int rilke_background=0x7f020002;
     }
     public static final class id {
         public static final int GridView_Buttons=0x7f060004;
@@ -69,20 +72,11 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f040000;
-        public static final int menu_Gallery=0x7f040006;
-        public static final int menu_LocationSketch=0x7f040009;
-        public static final int menu_News=0x7f040003;
-        public static final int menu_Poetry=0x7f040005;
-        public static final int menu_Quiz=0x7f040002;
-        public static final int menu_Route=0x7f040007;
-        public static final int menu_Sounds=0x7f04000a;
-        public static final int menu_Stories=0x7f040004;
         public static final int menu_Title=0x7f040001;
-        public static final int menu_Videos=0x7f040008;
-        public static final int poetry_Title=0x7f04000f;
-        public static final int story_Home=0x7f04000d;
-        public static final int story_Next=0x7f04000c;
-        public static final int story_Previous=0x7f04000b;
-        public static final int story_Title=0x7f04000e;
+        public static final int poetry_Title=0x7f040006;
+        public static final int story_Home=0x7f040004;
+        public static final int story_Next=0x7f040003;
+        public static final int story_Previous=0x7f040002;
+        public static final int story_Title=0x7f040005;
     }
 }
