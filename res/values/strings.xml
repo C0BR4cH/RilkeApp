@@ -58,10 +58,56 @@
         <item >Generationen</item>
         <item >Der Kardinal</item>
     </string-array>
-    
-    
-    
-    
-    
-    
+    <string-array name="quiz_questions">
+        <item>Wie hiess Rainer Maria Rilke mit richtigem Namen?</item>
+        <item>Was hat Rainer Maria Rilke nur einmal geschrieben?</item>
+        <item>Aus welcher Sprache hat Rainer Maria Rilke Literatur übersetzt?</item>
+        <item>In welchem Jahr wurde Rainer Maria Rilke geboren?</item>
+        <item>In welcher Stadt wurde Rilke geboren?</item>
+        <item>Welche Schule besuchte Rilke nicht?</item>
+        <item>Wen heiratete Rilke 1901?</item>
+        <item>Wie hiess seine Tochter?</item>
+        <item>Wo in der Schweiz lebte Rilke nicht?</item>
+        <item>In welchem Jahr ist Rilke gestorben?</item>
+        <item>Wo liegt Rilke begraben?</item>
+    </string-array>
+    <string-array name="quiz_answersA">
+        <item>René Karl Heinz Otto Maria Johann Rilke</item>
+        <item>Roman</item>
+        <item>Französisch</item>
+        <item>1873</item>
+        <item>Wien</item>
+        <item>Handelsakademie</item>
+        <item>Lou Andreas-Salomé</item>
+        <item>Ruth</item>
+        <item>Soglio</item>
+        <item>1927</item>
+        <item>Sierre/Siders</item>
+    </string-array>
+    <string-array name="quiz_answersB">
+        <item>René Karl Wilhelm Johann Josef Maria Rilke</item>
+        <item>Aufsatz</item>
+        <item>Italienisch</item>
+        <item>1882</item>
+        <item>Salzburg</item>
+        <item>Militärschule</item>
+        <item>Clara Westhoff</item>
+        <item>Maria</item>
+        <item>Berg am Irchel</item>
+        <item>1925</item>
+        <item>Raron</item>
+    </string-array>
+    <string-array name="quiz_answersC">
+        <item>Karl Otto Rainer Maria Joseph Rilke</item>
+        <item>Erzählung</item>
+        <item>Spanisch</item>
+        <item>1875</item>
+        <item>Prag</item>
+        <item>Universiät</item>
+        <item>Josephine von Werra</item>
+        <item>Elisabeth</item>
+        <item>Raron</item>
+        <item>1931</item>
+        <item>Visp</item>
+    </string-array>
 </resources>

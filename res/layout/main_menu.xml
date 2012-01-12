@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/TableLayout2"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:stretchColumns="1" >
+    android:orientation="vertical" >
+
     <TableRow
         android:id="@+id/tableRow1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
+
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon" />
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
@@ -20,89 +23,107 @@
             android:text="@string/menu_Title"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </TableRow>
-    <TableRow
-        android:id="@+id/reNews"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-        <Button
-            android:id="@+id/btnNews"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_News" >
-        </Button>
-        <Button
-            android:id="@+id/btnGallery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_Gallery" />
-    </TableRow>
-    <TableRow
-        android:id="@+id/rwQuiz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-        <Button
-            android:id="@+id/btnStories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_Stories" />
-        <Button
-            android:id="@+id/btnVideos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_Videos" />
-    </TableRow>
-    <TableRow
-        android:id="@+id/rwPoetry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-        <Button
-            android:id="@+id/btnPeotry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_Poetry" >
-        </Button>
-        <Button
-            android:id="@+id/btnSounds"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_Sounds" />
-    </TableRow>
-    <TableRow
-        android:id="@+id/rwStories"
-        android:layout_width="wrap_content"
+
+    <TableLayout
+        android:id="@+id/TLBody"
+        android:layout_width="322dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|center_horizontal" >
-        <Button
-            android:id="@+id/btnQuiz"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:id="@+id/reNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_News" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_Gallery" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnStories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_Stories" />
+
+            <Button
+                android:id="@+id/btnVideos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_Videos" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwPoetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnPeotry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_Poetry" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnSounds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_Sounds" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwStories"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/menu_Quiz" />
-        <Button
-            android:id="@+id/btnRoute"
+            android:layout_gravity="center|center_horizontal" >
+
+            <Button
+                android:id="@+id/btnQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_Quiz" />
+
+            <Button
+                android:id="@+id/btnRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_Route" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwRoute"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_Route" />
-    </TableRow>
-    <TableRow
-        android:id="@+id/rwRoute"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-        <Button
-            android:id="@+id/btnLocationSketch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_LocationSketch" />
-    </TableRow>
-    <LinearLayout
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnLocationSketch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_LocationSketch" />
+        </TableRow>
+    </TableLayout>
+
+    <GridView
         android:id="@+id/llFooter"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:orientation="horizontal" >
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Footer" />
-    </LinearLayout>
-</TableLayout>
+        android:numColumns="2" >
+    </GridView>
+
+</LinearLayout>
