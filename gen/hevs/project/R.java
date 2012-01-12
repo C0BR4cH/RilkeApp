@@ -32,32 +32,34 @@ public final class R {
     public static final class id {
         public static final int GridView_Buttons=0x7f060004;
         public static final int LinearLayout1=0x7f060000;
-        public static final int btnA=0x7f060012;
-        public static final int btnB=0x7f060013;
-        public static final int btnC=0x7f060014;
+        public static final int btnA=0x7f060014;
+        public static final int btnB=0x7f060015;
+        public static final int btnC=0x7f060016;
         public static final int imageView1=0x7f060002;
-        public static final int layoutQuiz=0x7f060005;
-        public static final int rwAnswerA=0x7f06000b;
-        public static final int rwAnswerB=0x7f06000d;
-        public static final int rwAnswerC=0x7f06000f;
-        public static final int rwButtons=0x7f060011;
-        public static final int rwImage=0x7f060008;
-        public static final int rwQuestion=0x7f060009;
-        public static final int rwTitle=0x7f060006;
-        public static final int story_StoryText=0x7f060017;
-        public static final int story_StoryTitle=0x7f060016;
-        public static final int story_Title=0x7f060015;
-        public static final int story_author=0x7f060018;
-        public static final int story_btnHome=0x7f06001a;
-        public static final int story_btnNext=0x7f06001b;
-        public static final int story_btnPrev=0x7f060019;
+        public static final int layoutQuiz=0x7f060007;
+        public static final int linearLayout2=0x7f060005;
+        public static final int rwAnswerA=0x7f06000d;
+        public static final int rwAnswerB=0x7f06000f;
+        public static final int rwAnswerC=0x7f060011;
+        public static final int rwButtons=0x7f060013;
+        public static final int rwImage=0x7f06000a;
+        public static final int rwQuestion=0x7f06000b;
+        public static final int rwTitle=0x7f060008;
+        public static final int story_StoryText=0x7f060019;
+        public static final int story_StoryTitle=0x7f060018;
+        public static final int story_Title=0x7f060017;
+        public static final int story_author=0x7f06001a;
+        public static final int story_btnHome=0x7f06001c;
+        public static final int story_btnNext=0x7f06001d;
+        public static final int story_btnPrev=0x7f06001b;
         public static final int tableRow1=0x7f060001;
         public static final int textView1=0x7f060003;
-        public static final int txtAnswerA=0x7f06000c;
-        public static final int txtAnswerB=0x7f06000e;
-        public static final int txtAnswerC=0x7f060010;
-        public static final int txtQuestion=0x7f06000a;
-        public static final int txtTitle=0x7f060007;
+        public static final int textView2=0x7f060006;
+        public static final int txtAnswerA=0x7f06000e;
+        public static final int txtAnswerB=0x7f060010;
+        public static final int txtAnswerC=0x7f060012;
+        public static final int txtQuestion=0x7f06000c;
+        public static final int txtTitle=0x7f060009;
     }
     public static final class layout {
         public static final int main_menu=0x7f030000;
@@ -67,10 +69,11 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f040000;
         public static final int menu_Title=0x7f040001;
-        public static final int poetry_Title=0x7f040006;
-        public static final int story_Home=0x7f040004;
-        public static final int story_Next=0x7f040003;
-        public static final int story_Previous=0x7f040002;
-        public static final int story_Title=0x7f040005;
+        public static final int menu_footer=0x7f040002;
+        public static final int poetry_Title=0x7f040007;
+        public static final int story_Home=0x7f040005;
+        public static final int story_Next=0x7f040004;
+        public static final int story_Previous=0x7f040003;
+        public static final int story_Title=0x7f040006;
     }
 }
