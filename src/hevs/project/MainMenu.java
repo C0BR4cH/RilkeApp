@@ -71,7 +71,7 @@ public class MainMenu extends Activity
 			btn.setText(buttons[position]);  
 			// filenames is an array of strings  
 			btn.setTextColor(Color.WHITE);  
-			//btn.setBackgroundResource(R.drawable.button);  
+			btn.setBackgroundResource(R.drawable.button); 
 			btn.setId(position);  
 			// Set the onclicklistener so that pressing the button fires an event  
 			// We will need to implement this onclicklistner.  
