@@ -42,8 +42,8 @@ public class MainMenu extends Activity
 	    {
 	    	if(v==findViewById(R.id.btnQuiz))
 	    	{
-				Intent settings = new Intent(MainMenu.this,Quiz.class);
-				MainMenu.this.startActivity(settings);
+				Intent quiz = new Intent(MainMenu.this,Quiz.class);
+				MainMenu.this.startActivity(quiz);
 	    	}
 	    	if(v==findViewById(R.id.btnNews))
 	    	{
