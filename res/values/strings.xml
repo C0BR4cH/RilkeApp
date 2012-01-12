@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Rilke Festival Application</string>
     <string name="menu_Title">Rilke Festival</string><string name="menu_footer">Project blablabla</string>
-    <string name="story_Previous">Prev</string>
+    <string name="menu_iconDescription">default icon</string><string name="story_Previous">Prev</string>
     <string name="story_Next">Next</string>
     <string name="story_Home">Home</string>
     <string name="story_Title">Stories</string>
@@ -124,6 +124,7 @@
         <item>1</item>
         <item>2</item>
     </integer-array>
+    
     
     
 </resources>

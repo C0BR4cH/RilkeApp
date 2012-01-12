@@ -12,6 +12,7 @@
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/menu_iconDescription"
             android:src="@drawable/icon" />
         <TextView
             android:id="@+id/textView1"
@@ -29,13 +30,11 @@
         android:background="@drawable/rilke_background"
         android:layout_weight="1">
     </GridView>
-
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal" >
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
