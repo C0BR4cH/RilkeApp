@@ -4,7 +4,12 @@
             <TextView android:text="Rilke Quiz" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/txtTitle" android:layout_width="wrap_content"></TextView>
             <TextView android:text="Score: 1337" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:id="@+id/txtScore" android:layout_width="wrap_content"></TextView>
         </TableRow>
-        <TableRow android:id="@+id/rwImage" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+        <TableRow android:id="@+id/rwImage" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/icon" android:layout_height="wrap_content" android:id="@+id/imageView1" android:layout_width="wrap_content"></ImageView>
+        </TableRow>
+        <TableRow android:id="@+id/rwQuestion" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        	<TextView android:text="Question?" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/txtQuestion" android:layout_width="wrap_content"></TextView>
+        </TableRow>
         <TableRow android:id="@+id/rwAnswerA" android:layout_width="wrap_content" android:layout_height="wrap_content">
             <TextView android:text="Answer A" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/txtAnswerA" android:layout_width="wrap_content"></TextView>
         </TableRow>
@@ -13,5 +18,8 @@
         </TableRow>
         <TableRow android:id="@+id/rwAnswerC" android:layout_width="wrap_content" android:layout_height="wrap_content">
             <TextView android:text="Answer C" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/txtAnswerC" android:layout_width="wrap_content"></TextView>
+        </TableRow>
+        <TableRow android:id="@+id/rwBtnOk" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:text="Ok" android:id="@+id/btnOk" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
         </TableRow>
     </TableLayout>
