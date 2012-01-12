@@ -8,15 +8,16 @@
     	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 		    android:id="@+id/LinearLayout2"
 		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content"
+		    android:layout_height="fill_parent"
 		    android:orientation="horizontal" 
-		    android:gravity="center_horizontal">
+		    android:gravity="left">
 		        <TextView
 		            android:id="@+id/txtTitle"
 		        	android:textAppearance="?android:attr/textAppearanceMedium"
 		        	android:layout_height="wrap_content"
 		        	android:text="Rilke Quiz"
 		        	android:layout_width="wrap_content"
+		        	android:gravity="left"
 		        	android:layout_gravity="left" />
 		        <TextView
 		        	android:id="@+id/txtCorrect"
@@ -24,6 +25,7 @@
 		        	android:layout_height="wrap_content"
 		        	android:text="Correct:"
 		        	android:layout_width="wrap_content"
+		        	android:gravity="left"
 		        	android:layout_gravity="right" />
 		        <TextView
 		        	android:id="@+id/txtCorrectNum"
@@ -31,6 +33,7 @@
 		        	android:layout_height="wrap_content"
 		        	android:text="0"
 		        	android:layout_width="wrap_content"
+		        	android:gravity="left"
 		        	android:layout_gravity="right" />
 		        <TextView
 		        	android:id="@+id/txtCorrectMax"
@@ -38,6 +41,7 @@
 		        	android:layout_height="wrap_content"
 		        	android:text="/11"
 		        	android:layout_width="wrap_content"
+		        	android:gravity="left"
 		        	android:layout_gravity="right" />
         </LinearLayout>
        	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -48,7 +52,7 @@
 		    android:gravity="center_horizontal"
 		    android:layout_weight="1">
 		        <ImageView
-		        	android:src="@drawable/icon"
+		        	android:src="@drawable/quiz_img"
 		        	android:layout_height="wrap_content"
 		        	android:id="@+id/imageView1"
 		        	android:layout_width="wrap_content" />
