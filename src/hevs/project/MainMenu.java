@@ -3,6 +3,7 @@ package hevs.project;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -15,14 +16,18 @@ import android.widget.GridView;
 public class MainMenu extends Activity
 {
 	private String[] buttons;
+	private Resources res;
 
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_menu);
-
-		buttons = new String[]{"News", "Gallery", "Stories", "Videos", "Poetry", "Sounds", "Quiz", "Route", "Kroki"};
-
+		
+		//fill array with all titles
+		res = getResources();
+		buttons = res.getStringArray(R.array.menu_titles);
+		
+		//fill gridview with buttons
 		GridView gridview = (GridView) findViewById(R.id.GridView_Buttons);  
 		gridview.setAdapter(new ButtonAdapter(this)); 
 	}
