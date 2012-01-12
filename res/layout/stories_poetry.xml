@@ -10,13 +10,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/story_Title"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="#FF6600"/>
     <TextView
         android:id="@+id/story_StoryTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@array/story_storyTitle"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
