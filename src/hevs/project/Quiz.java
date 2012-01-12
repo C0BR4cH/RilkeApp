@@ -41,7 +41,10 @@ public class Quiz extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
-        currentSet=0;
+        
+        // Init current set and correct answers
+        currentSet=-1;
+        correct=0;
         
         // Init TextViews
         question=(TextView)findViewById(R.id.txtQuestion);
@@ -73,11 +76,11 @@ public class Quiz extends Activity
     
     private void nextQuizSet()
     {
+    	currentSet++;
     	question.setText(questions[currentSet]);
     	answerA.setText(answersA[currentSet]);
     	answerB.setText(answersB[currentSet]);
     	answerC.setText(answersC[currentSet]);
-    	currentSet++;
     }
     
     private void refCorrect()
