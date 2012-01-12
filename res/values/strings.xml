@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RilkeApp</string>
-    <string name="menu_Quiz">Quiz</string>
+    <string name="app_name">Rilke Festival Application</string>
+    <string name="menu_Title">Rilke Festival</string><string name="menu_Quiz">Quiz</string>
     <string name="menu_News">News</string>
     <string name="menu_Stories">Stories</string>
     <string name="menu_Poetry">Poetry</string>
-    <string name="menu_Route">Route</string><string name="story_Previous">Prev</string>
+    <string name="menu_Gallery">Gallery</string><string name="menu_Route">Route</string><string name="menu_Videos">Videos</string><string name="menu_LocationSketch">Location Sketch</string><string name="menu_Sounds">Sounds</string><string name="story_Previous">Prev</string>
     <string name="story_Next">Next</string>
     <string name="story_Home">Home</string>
     <string name="story_Title">Stories</string>
@@ -52,5 +52,10 @@
         <item >Generationen</item>
         <item >Der Kardinal</item>
     </string-array>
+    
+    
+    
+    
+    
     
 </resources>
