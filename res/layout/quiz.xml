@@ -26,4 +26,7 @@
             <Button android:layout_height="wrap_content" android:text="B" android:layout_width="100px" android:layout_gravity="center" android:id="@+id/btnB"></Button>
             <Button android:layout_height="wrap_content" android:text="C" android:layout_width="100px" android:layout_gravity="right" android:id="@+id/btnC"></Button>
         </TableRow>
+        <TableRow android:id="@+id/rwHome" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:text="Home" android:id="@+id/btnHome" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        </TableRow>
     </TableLayout>

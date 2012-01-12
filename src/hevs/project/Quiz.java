@@ -27,6 +27,7 @@ public class Quiz extends Activity
 	private Button btnA;
 	private Button btnB;
 	private Button btnC;
+	private Button btnHome;
 	private int correct;
 	private int currentSet;
 	private int[] answers;
@@ -66,9 +67,11 @@ public class Quiz extends Activity
         btnA=(Button)findViewById(R.id.btnA);
         btnB=(Button)findViewById(R.id.btnB);
         btnC=(Button)findViewById(R.id.btnC);
+        btnHome=(Button)findViewById(R.id.btnHome);
         btnA.setOnClickListener(btnListener);
         btnB.setOnClickListener(btnListener);
         btnC.setOnClickListener(btnListener);
+        btnHome.setOnClickListener(btnListener);
         
         // Set first questions/answer set
         nextQuizSet();
@@ -77,6 +80,11 @@ public class Quiz extends Activity
     private void nextQuizSet()
     {
     	currentSet++;
+    	if(currentSet==11)
+    	{
+    		showResult();
+    		return;
+    	}
     	question.setText(questions[currentSet]);
     	answerA.setText(answersA[currentSet]);
     	answerB.setText(answersB[currentSet]);
@@ -86,10 +94,15 @@ public class Quiz extends Activity
     private void refCorrect()
     {
     	correct++;
-    	correctNum.setText(correct);
+    	correctNum.setText(String.valueOf(correct));
     }
     
-    public class ButtonListener implements OnClickListener
+    private void showResult()
+    {
+    	setContentView(R.layout.quiz_result);
+    }
+    
+    private class ButtonListener implements OnClickListener
     {
 	    public void onClick(View v)
 	    {
@@ -111,6 +124,8 @@ public class Quiz extends Activity
 	    			refCorrect();
 	    		nextQuizSet();
 	    	}
+	    	if(v==findViewById(R.id.btnHome))
+	    		finish();
 	    }    
 	}
 }
