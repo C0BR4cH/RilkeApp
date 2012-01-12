@@ -58,8 +58,11 @@ public class Quiz extends Activity
         answersC=res.getStringArray(R.array.quiz_answersC);
         answers=res.getIntArray(R.array.quiz_answers);
         
-        // Init Listener and add it to buttons
+        // Init Listener, Buttons and add Listener to Buttons
         btnListener=new ButtonListener();
+        btnA=(Button)findViewById(R.id.btnA);
+        btnB=(Button)findViewById(R.id.btnB);
+        btnC=(Button)findViewById(R.id.btnC);
         btnA.setOnClickListener(btnListener);
         btnB.setOnClickListener(btnListener);
         btnC.setOnClickListener(btnListener);
