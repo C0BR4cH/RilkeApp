@@ -23,6 +23,7 @@ public class Quiz extends Activity
 	private TextView answerA;
 	private TextView answerB;
 	private TextView answerC;
+	private TextView correctNum;
 	private Button btnA;
 	private Button btnB;
 	private Button btnC;
@@ -40,6 +41,11 @@ public class Quiz extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
+        question=(TextView)findViewById(R.id.txtQuestion);
+        answerA=(TextView)findViewById(R.id.txtAnswerA);
+        answerB=(TextView)findViewById(R.id.txtAnswerB);
+        answerC=(TextView)findViewById(R.id.txtAnswerC);
+        correctNum=(TextView)findViewById(R.id.txtCorrectNum);
         res=getResources();
         currentSet=0;
         
@@ -59,6 +65,12 @@ public class Quiz extends Activity
     	currentSet++;
     }
     
+    private void refCorrect()
+    {
+    	correct++;
+    	correctNum.setText(correct);
+    }
+    
     public class ButtonListener implements OnClickListener
     {
 	    public void onClick(View v)
@@ -66,19 +78,19 @@ public class Quiz extends Activity
 	    	if(v==findViewById(R.id.btnA))
 	    	{
 	    		if(answers[currentSet]==1)
-	    			correct++;
+		    		refCorrect();
 	    		nextQuizSet();
 	    	}
 	    	if(v==findViewById(R.id.btnB))
 	    	{
 	    		if(answers[currentSet]==2)
-	    			correct++;
+	    			refCorrect();
 	    		nextQuizSet();
 	    	}
 	    	if(v==findViewById(R.id.btnC))
 	    	{
 	    		if(answers[currentSet]==3)
-	    			correct++;
+	    			refCorrect();
 	    		nextQuizSet();
 	    	}
 	    }    
