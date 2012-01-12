@@ -10,6 +10,7 @@
 package hevs.project;
 
 import android.app.Activity;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -28,16 +29,34 @@ public class Quiz extends Activity
 	private int answer;
 	private int correct;
 	private int currentSet;
+	private int[] answers;
+	private String[] questions;
+	private String[] answersA;
+	private String[] answersB;
+	private String[] answersC;
+	private Resources res;
 	
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
+        res=getResources();
+        currentSet=0;
+        
+        questions=res.getStringArray(R.array.quiz_questions);
+        answersA=res.getStringArray(R.array.quiz_answersA);
+        answersB=res.getStringArray(R.array.quiz_answersB);
+        answersC=res.getStringArray(R.array.quiz_answersC);
+        answers=res.getIntArray(R.array.quiz_answers);
     }
     
     private void nextQuizSet()
     {
-    	question.setText("blubb");
+    	question.setText(questions[currentSet]);
+    	answerA.setText(answersA[currentSet]);
+    	answerB.setText(answersB[currentSet]);
+    	answerC.setText(answersC[currentSet]);
+    	currentSet++;
     }
     
     public class ButtonListener implements OnClickListener
@@ -46,15 +65,21 @@ public class Quiz extends Activity
 	    {
 	    	if(v==findViewById(R.id.btnA))
 	    	{
-	    		
+	    		if(answers[currentSet]==1)
+	    			correct++;
+	    		nextQuizSet();
 	    	}
 	    	if(v==findViewById(R.id.btnB))
 	    	{
-	    		
+	    		if(answers[currentSet]==2)
+	    			correct++;
+	    		nextQuizSet();
 	    	}
 	    	if(v==findViewById(R.id.btnC))
 	    	{
-	    		
+	    		if(answers[currentSet]==3)
+	    			correct++;
+	    		nextQuizSet();
 	    	}
 	    }    
 	}
