@@ -86,9 +86,9 @@ public class Quiz extends Activity
     		return;
     	}
     	question.setText(questions[currentSet]);
-    	answerA.setText(answersA[currentSet]);
-    	answerB.setText(answersB[currentSet]);
-    	answerC.setText(answersC[currentSet]);
+    	answerA.setText("A) "+answersA[currentSet]);
+    	answerB.setText("B) "+answersB[currentSet]);
+    	answerC.setText("C) "+answersC[currentSet]);
     }
     
     private void refCorrect()
