@@ -41,7 +41,7 @@ public class Quiz extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
-        currentSet=-1;
+        currentSet=0;
         
         // Init TextViews
         question=(TextView)findViewById(R.id.txtQuestion);
