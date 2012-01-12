@@ -10,11 +10,26 @@
     <string name="story_Next">Next</string>
     <string name="story_Home">Home</string>
     <string name="story_Title">Stories</string>
-    <string name="story_Story1">TitleOfStoryOne</string>
-    <string name="story_Text1">HugeTextOfStoryOne</string>
     <string name="poetry_Title">Poetry</string>
-    <string name="poetry_Poetry1">Ich ließ meinen Engel lange nicht los</string>
-    <string name="poetry_Text1">Ich ließ meinen Engel lange nicht los, und er verarmte mir in den Armen und wurde klein, und ich wurde groß: und auf einmal war ich das Erbarmen, und er eine zitternde Bitte bloß. Da hab ich ihm seine Himmel gegeben, - und er ließ mir das Nahe, daraus er entschwand; er lernte das Schweben, ich lernte das Leben, und wir haben langsam einander erkannt...</string> 
-    <string name="story_author1">story_author1</string>
-    <string name="poetry_author1">Rainer Maria Rilke, 22.2.1898, Berlin-Wilmersdorf</string>
+    <string-array name="poetry_author">
+        <item >Rainer Maria Rilke, 22.2.1898, Berlin-Wilmersdorf</item>
+    </string-array>
+    <string-array name="poetry_Text">
+        <item >Ich ließ meinen Engel lange nicht los, und er verarmte mir in den Armen und wurde klein, und ich wurde groß: und auf einmal war ich das Erbarmen, und er eine zitternde Bitte bloß. Da hab ich ihm seine Himmel gegeben, - und er ließ mir das Nahe, daraus er entschwand; er lernte das Schweben, ich lernte das Leben, und wir haben langsam einander erkannt...</item>
+    </string-array>
+    <string-array name="poetry_poetryTitle">
+        <item >Ich ließ meinen Engel lange nicht los</item>
+    </string-array>
+    <string-array name="story_author">
+        <item >author</item>
+        <item >author story 2</item>
+    </string-array>
+    <string-array name="story_text">
+        <item >text of the story</item>
+        <item >text of story 2</item>
+    </string-array>
+    <string-array name="story_storyTitle">
+        <item >Title of story one</item>
+        <item >title of story 2</item>
+    </string-array>
 </resources>

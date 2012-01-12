@@ -1,6 +1,7 @@
 package hevs.project;
 
 import android.app.Activity;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -19,6 +20,11 @@ public class StoriesPoetry extends Activity{
 	private OnClickListener btnListener;
 	private Bundle bundle;
 	private String parameter;
+	private int counter;
+	private Resources res;
+	private String[] arrayTitle;
+	private String[] arrayTxt;
+	private String[] arrayAuthor;
 	
 	public void onCreate(Bundle savedInstanceState)
     {
@@ -38,54 +44,66 @@ public class StoriesPoetry extends Activity{
         btnHome=(Button)findViewById(R.id.story_btnHome);
         btnNext=(Button)findViewById(R.id.story_btnNext);
         
-        //create listener and check which menu was called
-        if(parameter.equals("poetry")){
-        	title.setText(R.string.poetry_Title);
-        	storyTitle.setText(R.string.poetry_Poetry1);
-        	storyTxt.setText(R.string.poetry_Text1);
-        	authorTxt.setText(R.string.poetry_author1);
-        	btnListener = new ButtonListenerPoetry();
-        }else
-        	btnListener = new ButtonListenerStories();
+        //set counter and get resources
+        counter = 0;
+        res = getResources();
         
-        //add listener
+        //check which menu was called
+        if(parameter.equals("poetry")){
+        	//fill correct array
+        	arrayTitle = res.getStringArray(R.array.poetry_poetryTitle);
+        	arrayTxt = res.getStringArray(R.array.poetry_Text);
+        	arrayAuthor = res.getStringArray(R.array.poetry_author);
+        	//set correct title
+        	title.setText(R.string.poetry_Title);
+        }else{
+        	//fill correct array
+        	arrayTitle = res.getStringArray(R.array.story_storyTitle);
+        	arrayTxt = res.getStringArray(R.array.story_text);
+        	arrayAuthor = res.getStringArray(R.array.story_author);
+        }
+        //set correct text
+        setText(counter);
+        //create and add listener
+        btnListener = new ButtonListener();
         btnPrev.setOnClickListener(btnListener);
         btnHome.setOnClickListener(btnListener);
         btnNext.setOnClickListener(btnListener);
     }
-	//ButtonListener for poetry
-    public class ButtonListenerPoetry implements OnClickListener{
+	
+	//method sets new Text in layout
+	private void setText(int pos){
+		storyTitle.setText(arrayTitle[pos]);
+    	storyTxt.setText(arrayTxt[pos]);
+    	authorTxt.setText(arrayAuthor[pos]);
+	}
+
+    //ButtonListener for buttons on bottom
+    public class ButtonListener implements OnClickListener{
 
 		@Override
 	    public void onClick(View v)
 	    {
-	    	if(v==findViewById(R.id.story_btnPrev))
+	    	//show previous story or poetry
+			if(v==findViewById(R.id.story_btnPrev))
 	    	{
+	    		counter--;
+	    		if(counter<0)
+	    			counter=arrayTitle.length-1;
+	    		setText(counter);
 	    	}
+			//go back to the menu
 	    	if(v==findViewById(R.id.story_btnHome))
 	    	{
 	    		finish();
 	    	}
+	    	//show next story or poetry
 	    	if(v==findViewById(R.id.story_btnNext))
 	    	{
-	    	}
-	    }
-    }
-    //ButtonListener for stories
-    public class ButtonListenerStories implements OnClickListener{
-
-		@Override
-	    public void onClick(View v)
-	    {
-	    	if(v==findViewById(R.id.story_btnPrev))
-	    	{
-	    	}
-	    	if(v==findViewById(R.id.story_btnHome))
-	    	{
-	    		finish();
-	    	}
-	    	if(v==findViewById(R.id.story_btnNext))
-	    	{
+	    		counter++;
+	    		if(counter>=arrayTitle.length)
+	    			counter=0;
+	    		setText(counter);
 	    	}
 	    }
     }
