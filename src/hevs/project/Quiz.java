@@ -24,10 +24,13 @@ public class Quiz extends Activity
 	private TextView answerB;
 	private TextView answerC;
 	private TextView correctNum;
+	private TextView rCorrectNum;
 	private Button btnA;
 	private Button btnB;
 	private Button btnC;
 	private Button btnHome;
+	private Button btnRHome;
+	private Button btnAgain;
 	private int correct;
 	private int currentSet;
 	private int[] answers;
@@ -53,6 +56,7 @@ public class Quiz extends Activity
         answerB=(TextView)findViewById(R.id.txtAnswerB);
         answerC=(TextView)findViewById(R.id.txtAnswerC);
         correctNum=(TextView)findViewById(R.id.txtCorrectNum);
+        rCorrectNum=(TextView)findViewById(R.id.txtRCorrectNum);
         
         // Init string resources
         res=getResources();
@@ -68,10 +72,14 @@ public class Quiz extends Activity
         btnB=(Button)findViewById(R.id.btnB);
         btnC=(Button)findViewById(R.id.btnC);
         btnHome=(Button)findViewById(R.id.btnHome);
+        btnRHome=(Button)findViewById(R.id.btnRHome);
+        btnAgain=(Button)findViewById(R.id.btnAgain);
         btnA.setOnClickListener(btnListener);
         btnB.setOnClickListener(btnListener);
         btnC.setOnClickListener(btnListener);
         btnHome.setOnClickListener(btnListener);
+        btnRHome.setOnClickListener(btnListener);
+        btnAgain.setOnClickListener(btnListener);
         
         // Set first questions/answer set
         nextQuizSet();
@@ -99,6 +107,7 @@ public class Quiz extends Activity
     
     private void showResult()
     {
+    	rCorrectNum.setText(correctNum.getText());
     	setContentView(R.layout.quiz_result);
     }
     
@@ -124,8 +133,13 @@ public class Quiz extends Activity
 	    			refCorrect();
 	    		nextQuizSet();
 	    	}
-	    	if(v==findViewById(R.id.btnHome))
+	    	if(v==findViewById(R.id.btnHome)|v==findViewById(R.id.btnRHome))
 	    		finish();
+	    	if(v==findViewById(R.id.btnAgain))
+	    	{
+	    		System.err.println("Not implemented");
+	    		// Restart Quiz
+	    	}
 	    }    
 	}
 }
