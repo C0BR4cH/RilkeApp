@@ -11,6 +11,7 @@ package hevs.project;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -19,20 +20,24 @@ import android.widget.TextView;
 
 public class QuizResult extends Activity
 {
-	private Intent intent;
+	private Intent quiz;
 	private Button btnRHome;
 	private Button btnAgain;
 	private TextView rCorrectNum;
 	private OnClickListener btnListener;
+    private SharedPreferences preferences;
 
 	public QuizResult(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.quiz_result);
 		
+		// Init Preferences
+		preferences=getSharedPreferences("Prefs",MODE_PRIVATE);
+		
 		// Init TextViews
 		rCorrectNum=(TextView)findViewById(R.id.txtRCorrectNum);
-		rCorrectNum.setText("blubb");
+		rCorrectNum.setText(preferences.getString("CorrectNum","0"));
 		
 		// Init Listener, Buttons and add Listener to Buttons
 		btnListener=new ButtonListener();
@@ -50,13 +55,8 @@ public class QuizResult extends Activity
 				finish();
 			if(v==findViewById(R.id.btnAgain))
 			{
-				intent = getIntent();
-				intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-				overridePendingTransition(0, 0);
-				finish();
-
-				overridePendingTransition(0, 0);
-				startActivity(intent);
+				quiz = new Intent(QuizResult.this,Quiz.class);
+				QuizResult.this.startActivity(quiz);
 			}
 		}  
 	}

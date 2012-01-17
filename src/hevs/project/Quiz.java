@@ -10,6 +10,7 @@
 package hevs.project;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
@@ -37,6 +38,8 @@ public class Quiz extends Activity
 	private String[] answersC;
 	private Resources res;
 	private OnClickListener btnListener;
+	private SharedPreferences preferences;
+	private SharedPreferences.Editor editor;
 	
     public void onCreate(Bundle savedInstanceState)
     {
@@ -82,6 +85,10 @@ public class Quiz extends Activity
     	currentSet++;
     	if(currentSet==11)
     	{
+    		preferences=getSharedPreferences("Prefs",MODE_PRIVATE);
+    		editor=preferences.edit();
+    		editor.putString("CorrectNum",correctNum.getText().toString());
+    		editor.commit();
     		return;
     	}
     	question.setText(questions[currentSet]);
