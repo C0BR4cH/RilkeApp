@@ -51,12 +51,13 @@ public class QuizResult extends Activity
 	{
 		public void onClick(View v)
 		{
-			if(v==findViewById(R.id.btnHome))
+			if(v==findViewById(R.id.btnRHome))
 				finish();
 			if(v==findViewById(R.id.btnAgain))
 			{
 				quiz = new Intent(QuizResult.this,Quiz.class);
 				QuizResult.this.startActivity(quiz);
+				finish();
 			}
 		}  
 	}
