@@ -10,6 +10,7 @@
 package hevs.project;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ import android.widget.TextView;
 
 public class Quiz extends Activity
 {
+	private Intent quizResult;
 	private TextView question;
 	private TextView answerA;
 	private TextView answerB;
@@ -85,10 +87,18 @@ public class Quiz extends Activity
     	currentSet++;
     	if(currentSet==11)
     	{
+    		// Save Result to preferences
     		preferences=getSharedPreferences("Prefs",MODE_PRIVATE);
     		editor=preferences.edit();
     		editor.putString("CorrectNum",correctNum.getText().toString());
     		editor.commit();
+    		
+    		// Init Result Activity
+    		quizResult=new Intent(Quiz.this,QuizResult.class);
+			Quiz.this.startActivity(quizResult);
+			
+			// Finish Quiz Activity
+    		finish();
     		return;
     	}
     	question.setText(questions[currentSet]);
