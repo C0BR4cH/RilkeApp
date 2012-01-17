@@ -9,6 +9,14 @@
  */
 package hevs.project;
 
-public class Sketch
+import android.app.Activity;
+import android.os.Bundle;
+
+public class Sketch extends Activity
 {
+	public void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.sketch);
+	}
 }
