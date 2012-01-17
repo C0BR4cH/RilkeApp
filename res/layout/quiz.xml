@@ -1,66 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/LinearLayout1"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="fill_parent"
     android:orientation="vertical" 
     android:gravity="center_horizontal">
-    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		    android:id="@+id/LinearLayout2"
-		    android:layout_width="fill_parent"
-		    android:layout_height="fill_parent"
-		    android:orientation="horizontal" 
-		    android:gravity="left">
-		        <TextView
-		            android:id="@+id/txtTitle"
-		        	android:textAppearance="?android:attr/textAppearanceMedium"
-		        	android:layout_height="wrap_content"
-		        	android:text="Rilke Quiz"
-		        	android:layout_width="wrap_content"
-		        	android:gravity="left"
-		        	android:layout_gravity="left" />
-		        <TextView
-		        	android:id="@+id/txtCorrect"
-		        	android:textAppearance="?android:attr/textAppearanceSmall"
-		        	android:layout_height="wrap_content"
-		        	android:text="Correct:"
-		        	android:layout_width="wrap_content"
-		        	android:gravity="left"
-		        	android:layout_gravity="right" />
-		        <TextView
-		        	android:id="@+id/txtCorrectNum"
-		        	android:textAppearance="?android:attr/textAppearanceSmall"
-		        	android:layout_height="wrap_content"
-		        	android:text="0"
-		        	android:layout_width="wrap_content"
-		        	android:gravity="left"
-		        	android:layout_gravity="right" />
-		        <TextView
-		        	android:id="@+id/txtCorrectMax"
-		        	android:textAppearance="?android:attr/textAppearanceSmall"
-		        	android:layout_height="wrap_content"
-		        	android:text="/11"
-		        	android:layout_width="wrap_content"
-		        	android:gravity="left"
-		        	android:layout_gravity="right" />
-        </LinearLayout>
-       	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		    android:id="@+id/LinearLayout3"
-		    android:layout_width="fill_parent"
+    	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:orientation="vertical" 
-		    android:gravity="center_horizontal"
-		    android:layout_weight="1">
+		    android:stretchColumns="1">
+		    	<TableRow>
+		    		<TextView
+			            android:id="@+id/txtTitle"
+			        	android:textAppearance="?android:attr/textAppearanceMedium"
+			        	android:layout_height="wrap_content"
+			        	android:text="Rilke Quiz"
+			        	android:layout_width="wrap_content"
+			        	android:layout_gravity="left" />
+			        <TextView 
+			        	android:text=" "
+			    		android:textAppearance="?android:attr/textAppearanceSmall"
+			    		android:layout_height="wrap_content"
+			    		android:layout_width="wrap_content" />
+			        <TextView
+			        	android:id="@+id/txtCorrect"
+			        	android:textAppearance="?android:attr/textAppearanceSmall"
+			        	android:layout_height="wrap_content"
+			        	android:text="Correct:"
+			        	android:layout_width="wrap_content"
+			        	android:layout_gravity="right" />
+			        <TextView
+			        	android:id="@+id/txtCorrectNum"
+			        	android:textAppearance="?android:attr/textAppearanceSmall"
+			        	android:layout_height="wrap_content"
+			        	android:text="0"
+			        	android:layout_width="wrap_content"
+			        	android:layout_gravity="right" />
+			        <TextView
+			        	android:id="@+id/txtCorrectMax"
+			        	android:textAppearance="?android:attr/textAppearanceSmall"
+			        	android:layout_height="wrap_content"
+			        	android:text="/11"
+			        	android:layout_width="wrap_content"
+			        	android:gravity="left"
+			        	android:layout_gravity="right" />
+		    	</TableRow>
+        </TableLayout>
+      	<TextView 
+    		android:text=" "
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:layout_height="wrap_content"
+    		android:layout_width="wrap_content" />
+      	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:gravity="center_horizontal">
 		        <ImageView
 		        	android:src="@drawable/quiz_img"
 		        	android:layout_height="wrap_content"
 		        	android:id="@+id/imageView1"
 		        	android:layout_width="wrap_content" />
+		</LinearLayout>
+       	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical" 
+		    android:gravity="center_vertical"
+		    android:layout_weight="1">
 		    	<TextView
 		    		android:text="Question?"
 		    		android:textAppearance="?android:attr/textAppearanceSmall"
 		    		android:layout_height="wrap_content"
 		    		android:id="@+id/txtQuestion"
+		    		android:layout_width="wrap_content" />
+		    	<TextView 
+		    		android:text=" "
+		    		android:textAppearance="?android:attr/textAppearanceSmall"
+		    		android:layout_height="wrap_content"
 		    		android:layout_width="wrap_content" />
 		        <TextView
 		        	android:text="Answer A"
@@ -80,35 +96,39 @@
 		        	android:layout_height="wrap_content"
 		        	android:id="@+id/txtAnswerC"
 		        	android:layout_width="wrap_content" />
-		        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-				    android:id="@+id/LinearLayout4"
-				    android:layout_width="wrap_content"
-				    android:layout_height="wrap_content"
-				    android:orientation="horizontal" 
-				    android:gravity="center_horizontal">
-			        	<Button
-				        	android:layout_height="wrap_content"
-				        	android:text="A"
-				        	android:layout_width="100px"
-				        	android:layout_gravity="left"
-				        	android:id="@+id/btnA" />
-				        <Button
-				        	android:layout_height="wrap_content"
-				        	android:text="B"
-				        	android:layout_width="100px"
-				        	android:layout_gravity="center"
-				        	android:id="@+id/btnB" />
-				        <Button
-				        	android:layout_height="wrap_content"
-				        	android:text="C"
-				        	android:layout_width="100px"
-				        	android:layout_gravity="right"
-				        	android:id="@+id/btnC" />
-		        </LinearLayout>
-		        <Button
-		        	android:text="Home"
-		        	android:id="@+id/btnHome"
-		        	android:layout_width="wrap_content"
-		        	android:layout_height="wrap_content" />
 		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:gravity="center_horizontal">
+	        	<Button
+		        	android:layout_height="fill_parent"
+		        	android:text="A"
+		        	android:layout_width="wrap_content"
+		        	android:layout_gravity="left"
+		        	android:id="@+id/btnA" />
+		        <Button
+		        	android:layout_height="fill_parent"
+		        	android:text="B"
+		        	android:layout_width="wrap_content"
+		        	android:layout_gravity="center"
+		        	android:id="@+id/btnB" />
+		        <Button
+		        	android:layout_height="fill_parent"
+		        	android:text="C"
+		        	android:layout_width="wrap_content"
+		        	android:layout_gravity="right"
+		        	android:id="@+id/btnC" />
+        </LinearLayout>
+        <TextView 
+		    		android:text=" "
+		    		android:textAppearance="?android:attr/textAppearanceSmall"
+		    		android:layout_height="wrap_content"
+		    		android:layout_width="wrap_content" />
+        <Button
+	        	android:text="Home"
+	        	android:id="@+id/btnHome"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content" />
 </LinearLayout>
