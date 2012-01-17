@@ -27,7 +27,7 @@ public class QuizResult extends Activity
 	private OnClickListener btnListener;
     private SharedPreferences preferences;
 
-	public QuizResult(Bundle savedInstanceState)
+	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.quiz_result);
