@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:gravity="center_horizontal" android:layout_gravity="right">
+    android:gravity="center_horizontal" 
+    android:layout_gravity="right">
     <TextView
         android:id="@+id/story_Title"
         android:layout_width="wrap_content"
@@ -12,13 +13,15 @@
         android:text="@string/story_Title"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold"
-        android:textColor="#FF6600"/>
+        android:textColor="#FF6600"
+        android:lineSpacingExtra="5dp"/>
     <TextView
         android:id="@+id/story_StoryTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@array/story_storyTitle"
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:lineSpacingExtra="5dp"/>
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
@@ -32,7 +35,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@array/story_text" 
-                android:textAppearance="?android:attr/textAppearanceSmall"/>
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:lineSpacingExtra="5dp"/>
             <TextView
                 android:id="@+id/story_author"
                 android:layout_width="wrap_content"

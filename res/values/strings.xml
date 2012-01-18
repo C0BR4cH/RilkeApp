@@ -7,7 +7,7 @@
     <string name="story_Next">Next</string>
     <string name="story_Home">Home</string>
     <string name="story_Title">Stories</string>
-    <string name="poetry_Title">Poetry</string><string-array name="menu_titles">
+    <string name="poetry_Title">Poetry</string><string name="vid_Title">Video</string><string name="quiz_result">Result</string><string name="quiz_again">Try Again</string><string name="quiz_home">Home</string><string name="quiz_correct">Correct:</string><string-array name="menu_titles">
         <item>News</item>
         <item>Gallery</item>
         <item>Stories</item>
@@ -124,8 +124,9 @@
         <item>1</item>
         <item>2</item>
     </integer-array> 
-    <string name="quiz_correct">Correct:</string>
-    <string name="quiz_home">Home</string>
-    <string name="quiz_again">Try Again</string>
-    <string name="quiz_result">Result</string>
+    
+    
+    
+    
+    
 </resources>
