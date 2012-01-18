@@ -43,8 +43,6 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 
 public class Route extends MapActivity
@@ -72,7 +70,7 @@ public class Route extends MapActivity
 
 		// Init MapController
 		mapController=mapView.getController();
-		mapController.setZoom(10); // Zoom 1 is world view
+		mapController.setZoom(12); // Zoom 1 is world view
 
 		// Init GeoPoints
 		currentLoc=new GeoPoint(46227561,7358862); // GeoPoint fix: Sion Trainstation at 46.227561,7.358862
@@ -165,7 +163,7 @@ public class Route extends MapActivity
 				String[] lngLat = pairs[0].split(","); // lngLat[0]=longitude lngLat[1]=latitude lngLat[2]=height
 				// src
 				GeoPoint startGP = new GeoPoint((int)(Double.parseDouble(lngLat[1])*1E6),(int)(Double.parseDouble(lngLat[0])*1E6));
-				mapView.getOverlays().add(new RoadOverlay(startGP,startGP,1));
+//				mapView.getOverlays().add(new RoadOverlay(startGP,startGP,1));
 				GeoPoint gp1;
 				GeoPoint gp2 = startGP;
 				for(int i=1;i<pairs.length;i++) // the last one would be crash
@@ -176,7 +174,7 @@ public class Route extends MapActivity
 					gp2 = new GeoPoint((int)(Double.parseDouble(lngLat[1])*1E6),(int)(Double.parseDouble(lngLat[0])*1E6));
 					mapView.getOverlays().add(new RoadOverlay(gp1,gp2,2,color));
 				}
-				mapView.getOverlays().add(new RoadOverlay(dest,dest, 3)); // use the default color
+//				mapView.getOverlays().add(new RoadOverlay(dest,dest, 3)); // use the default color
 			}
 		}
 		catch (MalformedURLException e)
