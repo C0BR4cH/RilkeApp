@@ -123,17 +123,9 @@
         <item>3</item>
         <item>1</item>
         <item>2</item>
-<<<<<<< HEAD
     </integer-array> 
-</resources>
-=======
-    </integer-array>
     <string name="quiz_correct">Correct:</string>
     <string name="quiz_home">Home</string>
     <string name="quiz_again">Try Again</string>
     <string name="quiz_result">Result</string>
-    
-    
-    
 </resources>
->>>>>>> branch 'master' of git@github.com:C0BR4cH/RilkeApp.git
