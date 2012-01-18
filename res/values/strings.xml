@@ -3,11 +3,11 @@
     <string name="app_name">Rilke Festival Application</string>
     <string name="menu_Title">Rilke Festival</string>
     <string name="menu_footer">2012 Hevs</string>
-    <string name="menu_iconDescription">default icon</string><string name="story_Previous">Prev</string>
+    <string name="gallery_iconDescription">Rilke Images</string><string name="story_Previous">Prev</string>
     <string name="story_Next">Next</string>
     <string name="story_Home">Home</string>
     <string name="story_Title">Stories</string>
-    <string name="poetry_Title">Poetry</string><string name="vid_Title">Video</string><string name="quiz_result">Result</string><string name="quiz_again">Try Again</string><string name="quiz_home">Home</string><string name="quiz_correct">Correct:</string><string-array name="menu_titles">
+    <string name="poetry_Title">Poetry</string><string name="vid_Title">Video</string><string name="quiz_result">Result</string><string name="quiz_again">Try Again</string><string name="quiz_home">Home</string><string name="quiz_correct">Correct:</string><string name="gallery_Title">Gallery</string><string-array name="menu_titles">
         <item>News</item>
         <item>Gallery</item>
         <item>Stories</item>
@@ -123,10 +123,8 @@
         <item>3</item>
         <item>1</item>
         <item>2</item>
-    </integer-array> 
-    
-    
-    
-    
-    
+    </integer-array>
+    <declare-styleable name="gallery_gallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
 </resources>

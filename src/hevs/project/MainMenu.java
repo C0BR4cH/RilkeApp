@@ -93,6 +93,8 @@ public class MainMenu extends Activity
 			if(position==0){
 			}
 			if(position==1){
+				Intent gallery=new Intent(MainMenu.this,Gallery.class);
+				MainMenu.this.startActivity(gallery);
 			}
 			if(position==2)
 			{
