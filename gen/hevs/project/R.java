@@ -43,6 +43,7 @@ public final class R {
         public static final int imageView1=0x7f060002;
         public static final int imgPlan=0x7f060019;
         public static final int linearLayout2=0x7f060005;
+        public static final int myvideoview=0x7f060022;
         public static final int story_StoryText=0x7f06001c;
         public static final int story_StoryTitle=0x7f06001b;
         public static final int story_Title=0x7f06001a;
@@ -65,6 +66,10 @@ public final class R {
         public static final int txtRCorrectNum=0x7f060015;
         public static final int txtRTitle=0x7f060013;
         public static final int txtTitle=0x7f060007;
+        public static final int vid_Title=0x7f060021;
+        public static final int vid_btnHome=0x7f060024;
+        public static final int vid_btnNext=0x7f060025;
+        public static final int vid_btnPrev=0x7f060023;
     }
     public static final class layout {
         public static final int main_menu=0x7f030000;
@@ -72,6 +77,7 @@ public final class R {
         public static final int quiz_result=0x7f030002;
         public static final int sketch=0x7f030003;
         public static final int stories_poetry=0x7f030004;
+        public static final int video=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
@@ -80,12 +86,13 @@ public final class R {
         public static final int menu_iconDescription=0x7f040003;
         public static final int poetry_Title=0x7f040008;
         public static final int quiz_again=0x7f04000b;
-        public static final int quiz_correct=0x7f040009;
-        public static final int quiz_home=0x7f04000a;
-        public static final int quiz_result=0x7f04000c;
+        public static final int quiz_correct=0x7f04000d;
+        public static final int quiz_home=0x7f04000c;
+        public static final int quiz_result=0x7f04000a;
         public static final int story_Home=0x7f040006;
         public static final int story_Next=0x7f040005;
         public static final int story_Previous=0x7f040004;
         public static final int story_Title=0x7f040007;
+        public static final int vid_Title=0x7f040009;
     }
 }
