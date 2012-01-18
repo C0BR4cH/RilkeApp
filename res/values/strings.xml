@@ -123,7 +123,8 @@
         <item>3</item>
         <item>1</item>
         <item>2</item>
-    </integer-array> 
+    </integer-array>
+    <string name="sketch_home">Home</string> 
     
     
     
