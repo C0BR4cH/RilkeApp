@@ -23,6 +23,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class News extends ListActivity {
 
@@ -50,17 +51,13 @@ public class News extends ListActivity {
 			lv.setTextFilterEnabled(true);
 
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			MessageBox("Malformed URL!");
 		} catch (ParserConfigurationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			MessageBox("Parser Configuration Error!");
 		} catch (SAXException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			MessageBox("SAX Parser Error!");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			finish();
+			MessageBox("Coudnt open a Stream!");
 		}
 
 		lv.setOnItemClickListener(new OnItemClickListener() {
@@ -80,6 +77,11 @@ public class News extends ListActivity {
 			}
 		});
 	}
+	
+	//Display a message
+	public void MessageBox(String message){
+	    Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+	}
 
 	private class RSSHandler extends DefaultHandler
 	{
@@ -90,12 +92,10 @@ public class News extends ListActivity {
 
 		@Override
 		public void startDocument() throws SAXException {
-			// TODO Auto-generated method stub
 		}
 
 		@Override
 		public void endDocument() throws SAXException {
-			// TODO Auto-generated method stub
 		}
 
 		@Override
@@ -126,6 +126,7 @@ public class News extends ListActivity {
 		throws SAXException {
 			// save xml text into a string
 			String strCharacters = new String(ch, start, length);
+			strCharacters = android.text.Html.fromHtml(strCharacters).toString();
 			// title in title array
 			if (state == stateTitle)
 			{

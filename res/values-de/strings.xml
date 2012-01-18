@@ -1,4 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RilkeApp</string>
+    <string name="app_name">Rilke Festival Applikation</string>
+    <string name="menu_Title">Rilke Festival</string>
+    <string name="menu_footer">2012 Hevs</string>
+    <string name="gallery_iconDescription">Rilke Bilder</string>
+    <string name="story_Previous">Zurück</string>
+    <string name="story_Next">Nächste</string>
+    <string name="story_Home">Menü</string>
+    <string name="story_Title">Erzählungen</string>
+    <string name="poetry_Title">Gedichte</string>
+    <string name="vid_Title">Video</string>
+    <string name="quiz_result">Resultat</string>
+    <string name="quiz_again">Nochmal</string>
+    <string name="quiz_home">Menü</string>
+    <string name="quiz_correct">Korrekt:</string>
+    <string name="news_Title">News</string>
+    <string name="news_PostTitle">Post Titel</string>
+    <string name="gallery_Title">Gallery</string>
+    <declare-styleable name="gallery_gallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+    <string-array name="menu_titles">
+        <item>News</item>
+        <item>Gallery</item>
+        <item>Erzählungen</item>
+        <item>Videos</item>
+        <item>Gedichte</item>
+        <item>Skizze</item>
+        <item>Quiz</item>
+        <item>Route</item>
+    </string-array>
+    <string-array name="poetry_author">
+        <item >22.2.1898, Berlin-Wilmersdorf</item>
+        <item >Sommer/Herbst 1898, ?</item>
+        <item >11.7.1906, Paris</item>
+        <item >21.7.1907, Paris</item>
+        <item >Anfang Dezember 1911, Duino</item>
+        <item >Winter 1913/14, Paris</item>
+        <item >April 1914, Paris</item>
+    </string-array>
+    <string-array name="poetry_Text">
+        <item >Ich ließ meinen Engel lange nicht los,\nund er verarmte mir in den Armen\nund wurde klein, und ich wurde groß:\nund auf einmal war ich das Erbarmen,\nund er eine zitternde Bitte bloß.\nDa hab ich ihm seine Himmel gegeben, -\nund er ließ mir das Nahe, daraus er entschwand;\ner lernte das Schweben, ich lernte das Leben,\nund wir haben langsam einander erkannt&#x2026;</item>
+        <item >Ernster Engel aus Ebenholz:\nDu riesige Ruh.\nDein Schweigen schmolz\nnoch nie in den Bränden\nvon Büßerhänden.\nFlammenumflehter!\nDeine Beter\nsind stolz:\nwie du.\n\nDer du versteinst,\ndu über den Blicken beginnender\nKönig, erkiese\ndir ein Geschlecht,\ndem du gerecht\nerscheinst,\nsaumsinnender\nRiese.\n\nDu, aller Matten\nFurchteinflößer,\nEiner ist größer\nals du: dein Schatten.</item>
+        <item >Wie manches Mal durch das noch unbelaubte\nGezweig ein Morgen durchsieht, der schon ganz\nim Frühling ist: so ist in seinem Haupte\nnichts, was verhindern könnte, das der Glanz\n\naller Gedichte uns fast tödlich träfe;\ndenn noch kein Schatten ist in seinem Schaun,\nzu kühl für Lorbeer sind noch seine Schläfe,\nund später erst wird aus den Augenbraun\n\nhochstämmig sich der Rosengarten heben,\naus welchem Blätter, einzeln, ausgelöst\nhintreiben werden auf des Mundes Beben,\n\nder jetzt noch still ist, niegebraucht und blinkend\nund nur mit seinem Lächeln etwas trinkend,\nals würde ihm sein Singen eingeflößt.</item>
+        <item >Willkürlich von Gewesnem ausgeweitet:\nvon Wut und Aufruhr, von dem Kunterbunt\ndas die Verurteilten zu Tod begleitet,\nvon Buden, von der Jahrmarktsrufer Mund,\nund von dem Herzog, der vorüber reitet,\nund von dem Hochmut von Burgund,\n\n(auf allen Seiten Hintergrund):\n\nladet der Platz zum Einzug seiner Weite\ndie fernen Fenster unaufhörlich ein,\nwährend sich das Gefolge und Geleite\nder Leere langsam an den Handelsreihn\n\nverteilt und ordnet. In die Giebel steigend,\nwollen die kleinen Häuser alles sehen,\ndie Türme vor einander scheu verschweigend,\ndie immer maßlos hinter ihnen stehen.</item>
+        <item >Meiner lieben Ruth zum 10. Geburtstag\n\nWelcher bist du, mein lieber Stern,\nder mir zu Herzen schaut?\nEinem innigen, einem innigern\nbin ich anvertraut.\n\nWelcher bist du? Der Himmel steht\nnicht zwischen Ost und West,\ndu hast dich immer umgedreht\nund auch ich bin nicht fest.\n\nWelcher bist du - ? (nein sag mir&#8217;s nicht),\nder mir zu Herzen schaut;\nwenn ich mich nach allen richt\nwerd ich am besten Braut.</item>
+        <item >Guter Tag.         Da prüft man doch: was bringt er?\nUnd wie langsam liest man seine Schrift.\nRascher, reiner, kühner, unbedingter:\noh wie uns die Freude übertrifft.\n\nIst uns als Künftigste zuvor,\nwendet sich und blickt und macht uns schneller,\nund wir folgen wie die Vogelsteller,\nund das Herz klingt oben bis ins Ohr.\n\nGlück: was rollt das schwer auf seinem Rade,\nmüde, immer wieder unbereit;\naber Freude steht und blüht gerade,\nund wir treten an die Jahreszeit.</item>
+        <item >Dich zu fühlen bin ich aus den leichten\nKreisen meiner Fühlungen gestiegen\nund jetzt soll mich täglich im Erreichten\nTrauer großer Nähe überwiegen,\ndieses hülflos menschliche Gewicht.</item>
+    </string-array>
+    <string-array name="poetry_poetryTitle">
+        <item >Ich ließ meinen Engel lange nicht los</item>
+        <item >Gebet</item>
+        <item >Früher Apollo</item>
+        <item >Der Platz</item>
+        <item >Abend-Lied</item>
+        <item >Guter Tag</item>
+        <item >Dich zu fühlen</item>
+    </string-array>
+    <string-array name="story_author">
+        <item >vor dem 03.08.1895</item>
+        <item >1898</item>
+        <item >1899</item>
+    </string-array>
+    <string-array name="story_text">
+        <item >Klein=Lisbeth schlief schon. Auch ihre Mutter schlief. Stille war`s in der schlichten Stube. Hie und da hörte man die Athemzüge der Schlafenden. Hie und da prasselte und knatterte die kleine Nachtlampe auf dem breiten altmodischen Legkasten. Ihr Schein zeichnete einen gelben Kreis auf die weiße, gehäkelte Tischdecke. Im Dämmerlicht glimmten auf der Platte des Schrankes einige Bilderrahmen und ein Christus am Kreuze. Gegen die Wände zu ward es immer dunkler im Zimmer. Undeutlich erkannte man die Stäbe und das Netz des Kinderbettchens, das an der Fensterwand stund. Der Fenstervorhang war nicht herabgelassen.\nEine helle Nacht. - Von den grauglänzenden Scheiben hoben sich die dünnen Stäbe eines Käfigs ab. Auf dem obersten Querholz im Inneren schattete ein kleines, schwarzes Klümpchen: das Vögelchen schlief den Kopf unter den Federn. Es rührte sich nicht. -\nStille war. - Leise  und hastig tickte eine Uhr. - Jetzt schlug sie - elf mal. Lange  hallte der letzte Schlag nach. Das Nachtlicht flackerte heftig. Ein Schein huschte durchs Zimmer. Ein heller Kreis tanzte über die Stubendecke.\nDas kleine Vöglein erwachte, reckte das Köpfchen ein wenig, schüttelte die Federn. Dann blies es das Körperchen breit auf und entschlummerte wieder.\nJetzt klirrten die Scheiben. Das Hausthor unten war schwer ins Schloss gefallen. Es kam offenbar jemand nachhause. Schwere Schritte knarrten auf der hölzernen Treppe. Leise - dann immer lauter dann verklangen sie mählich wieder. Ein Schlüssel rasselte oben irgendwo im nächsten Stockwerk....\nDes Nachtlichts Flamme klagte und krümmte sich. Sie leckte an der Oberfläche des Öles hin, so dass helle Streifen durch das Zimmer glitten. - Die Mutter, deren Bette ganz im Dunkel stand, seufzte.\nDie Uhr schien noch eiliger zu ticken. Das Licht auf der Platte des Legschreines knisterte und knatterte. Ohnmächtig zuckte es her und hin. Ein ganz leiser Knall: es war erlöscht. -\nDunkel in der Stube. Nur der Käfig beim Fenster ward sichtbar. Das Thierchen darinnen schlief. Die Dielen knarrten. Gerade als ginge jemand auf und nieder. Bald da, bald dort in der Ecke. Dann drang ein Geräusch durch die Wand oder von oben. Jetzt wieder - stille. -\nDer Vogel im Käfig streckte das Köpfchen jäh aus dem Flaume. Er saß eine Weile still. - Dann flatterte er ängstlich hinter den Stäben umher. Bald prallten seine Flügel an der, bald an jener Seite an. Endlich blieb er unten im Sande. Ein leises, ängstliches Pipsen zitterte aus seiner Brust. Er reckte und streckte das Köpfchen und schlug ein paar Mal mit den Schwingen. Jetzt verstummte das Thier.\nMühsam schwang es sich auf das unterste Querholz, rüttelte sich und tauchte den Schnabel in das Wasserglas. Scheinbar erfrischt hüpfte es seitwärts und blieb an die Stangen des Bauers gelehnt. Den Kopf aber that es nicht mehr unter den Flaum.\nDie Uhr tickte. Die Athemzüge der Schlafenden waren regelmäßig. Die Dielen krachten nach wie vor. Auf der Straße rollte ein Wagen vorbei.\nDas Vögelchen aber war wieder im Sande. Die kleinen Füße waren nicht sichtbar. Es lag beinahe. Der Schnabel war offen und aufwärtsgerichtet: es rang nach Luft. Von Zeit zu Zeit stieß es einen sanften, klagenden Laut aus. Dann begann ein unaufhörliches Pipsen - fast so schnell wie das Ticken der Uhr.\nDie schwere Finsternis lastete auf der kleinen Brust. Das arme Herzchen pochte heftig hinter den zarten Rippen. Die schwarzen Augen waren offen.\nUnd da schien ihm, es stiege langsam etwas Schwarzes unter dem Tische, auf dem sein Bauer stand, herfür. Ganz langsam. Ein unförmiger, körperloser Schatten. Sein Pipsen wurde lauter. Bebend flatterte es über dem Sande her und hin.\nErschöpft hockte es endlich in einer Ecke. Der Schnabel haschte Luft; aber die Augen waren zu.Ein Geräusch....... die Uhr schlug - zwölfmal.\nDas Thier öffnete die Augen. Ein schriller Schrei gellte aus seiner Kehle - da......da.......\nDie Mutter war erwacht. Sie setzte sich auf. Im Zimmer war es sehr dunkel. Das Fenster war gar nicht zu sehn. Wohl kein Mondschein mehr - dachte sie. Sie wandte sich im Bette. Die Bretter krachten. - Wieder ruhige Athemzüge.\nDas Vöglein war vor Schreck verstummt. Da - über ihm schwebte dicht der Schatten. Wie ein Tuch, wie ein schwarzes Tuch. Aber nein, es war kein Schatten mehr, auch kein Tuch. Wie ein großer, schwerer Futtertrog sah es aus. Nein, jetzt, jetzt wie eine Kugel, und da dehnte sich etwas nach rechts, - nach links, - wie Flügel: ein Vogel schien es ein großer, dunkler Vogel...Das kleine, arme Thier im Bauer zitterte. Es konnte sich nicht rühren, auch nicht schreien, und der Schnabel stand doch so weit offen!\nDa kam ihm auf einmal der Wald in den Sinn und Blättergrün und Sonnengold, und dann das kleine Mädchen, das immer mit ihm spielte, - und die Apfelschnitte, die sie ihm sonntags brachte, - und...\nDer große, schwarze Vogel hatte des Käfigs Stäbe durchdrungen. Er war ganz nahe. Immer tiefer sank er so schwarz, so schwer.....\nNoch einmal schüttelte der gequälte Kleine seine Federn. - Er hob das Köpfchen, - da schlugen die Schwingen des schrecklichen, schwarzen Schatten ganz über ihm zusammen - ganz - ganz......\n"Mutter, Mutter!" fuhr Klein=Lisbeth in die Höhe.\n""Was? Mein Kind.""\n"Mir ist so angst."\n""Wirst schlimm geträumt haben,"" begütigte die Mutter. ""Leg dich auf die andere Seite und schlaf wieder ein.""\nDas Kind gehorchte. - Stille. -\nRuhige Athemzüge.\nDie Uhr tickt langsamer und schläfrig.\nMählich wird es heller in der Nähe des Fensters. Graues Morgenlicht sickert durch die Scheiben. Endlich sieht auch ein Sonnenstrahl herein. Aber erschrocken fährt er zurück.\nIm Bauer auf dem Sande liegt seitlich hingestreckt das kleine Vöglein, den Schnabel offen. Die Augen und die Federn am Kopfe sind voll Sandes.\nTodt.-\nLisbeth erwacht.\nSie fährt mit der Hand über die weichen, schlafrothen Wangen.\nLangsam kniet sie auf im Eisenbettchen.\nJetzt spricht sie ihr Morgengebet.\nDamit sie die Mutter nicht wecke, leise,  - ganz leise ------\n</item>
+        <item >In unseren Stuben riecht es am Donnerstag nach Tomaten, am Sonntag nach Gänsebraten, und jeden Montag ist Wäsche. So sind die Tage: der rote, der fette, der seifige. Außerdem gibt es noch die Tage hinter der Glastür; oder eigentlich einen einzigen Tag aus Kühle, Seide und Sandelholz. Das Licht darin ist gesiebt, fein, silbern, still; Ruß, Sturm, Lärm und Fliegen kommen nicht mit herein wie in alle anderen Stuben. Und doch ist nur die Glastür dazwischen; aber sie ist wie zwanzig eherne Tore, oder wie eine Brücke, die nicht enden will, oder wie ein Fluß mit einer unsicheren Fähre von Ufer zu Ufer.\nSelten kommt jemand hinüber und erkennt nach und nach, tief in der Dämmerung: über dem Sofa, groß, in Goldrahmen, der Großvater, die Großmutter. Es sind enge, ovale Brustbilder, aber beide haben ihre Hände hineingehoben, so mühsam das gewesen sein mag. Es wären keine Porträts geworden ohne diese Hände, hinter denen sie leise und bescheiden hingelebt haben, alle Tage lang. Diese Hände hatten das Leben gehabt und die Arbeit, die Sehnsucht und die Sorge, waren mutig und jung gewesen und sind müde und alt geworden, während sie selbst nur fromme, ehrfürchtige Zuschauer dieser Geschicke waren. Ihre Mienen blieben müßig irgendwo weit vom Leben und hatten nichts zu tun, als einander langsam ähnlich zu werden. Und in den Goldrahmen über dem Sofa sehen sie wie Geschwister aus. Aber dann stehen mit einem Male ihre Hände vor den schwarzen Sonntagskleidern und verraten sie. Die eine, hart, krampfig, rücksichtslos, sagt: So ist das Leben. Die andere, blaß, bang, voll Zärtlichkeit, sagt: Sieben Kinder - oh! Und einmal ist der blonde Enkel dabei, hört die Hände und denkt: diese Hand ist wie der Vater, und meint die harte, narbige damit. Und vor der bleichen Hand fühlt er: wie die Mutter ist sie. Die Ähnlichkeit ist groß; und der Knabe weiß, daß die Eltern sich nicht gern so sehen mögen; deshalb kommen sie selten in den Salon. Sie passen in die Stuben, die voll sind von lautem Licht, und in den Wechsel der Tage, die bald rot von Tomaten, bald dumpf von Soda sind. Denn das ist das Leben. Und es bleibt alles in ihren Zügen hängen wie einst an den Händen der Großeltern. Ein paar Hände sind sie und nichts dahinter.\nHinter der Glastür sind seltsame Gedanken. Die hohen, halbblinden Spiegel wiederholen immerfort, als müßten sie&#8217;s auswendig lernen: der Großvater, die Großmutter. Und die Albums auf der gehäkelten Tischdecke sind voll davon: Großvater, Großmutter, Großvater, Großmutter. Natürlich stehen die steilen Stühle ehrfurchtsvoll herum: als ob sie einander eben erst vorgestellt wären und gerade die ersten Phrasen tauschten: »Sehr angenehm«, oder: »Sie gedenken, lange hier zu bleiben?«oder so etwas Höfliches. Und dann verstummen sie ganz, sagen gleichsam: »Bitte«, wenn die Spieluhr beginnt: »Tingilligin &#x2026; « Und sie singt mit ihrer welken, winzigen Stimme ein Menuett. Das Lied bleibt eine Welle über den Dingen und sickert dann in die vielen dunklen Spiegel hinein und ruht in ihnen wie Silber in Seen. In einer Ecke steht der Enkel und ist wie von van Dyck. Er möchte so heißen, daß man seinen Namen zur Spieluhr singen könnte, denn er hat plötzlich das Gefühl: Kampf und Krankheit sind es nicht, auch nicht die Sorgen und das tägliche Brot und der Wäschetag und alles andere, was mit uns draußen in den engen Stuben wohnt. Das wirkliche Leben ist wie dieses »Tingilligin« &#x2026; Es kann nehmen und schenken, kann dich Bettler rufen oder König und tief oder traurig machen je nachdem, aber es kann nicht das Gesicht bang oder zornig verzerren und es kann auch - verzeih, Großpapa - es kann auch die Hände nicht hart und häßlich machen wie deine.\nDas war nur so ein breites, dunkles Gefühl in dem blonden Knaben. Wie ein Hintergrund, vor dem andere kleine Kindergedanken standen wie Bleisoldaten. Aber er empfand es doch, und vielleicht lebt ers einmal.</item>
+        <item >Er ist der Sohn der schönen Fürstin von Ascoli. Sein Vater war irgend ein Abenteurer, er nannte sich damals Marquis Pemba. Aber die Fürstin liebt gerade diesen Sohn. Er erinnert sie an einen Garten, an Venedig und an einen Tag, da sie schöner war als sonst. Darum soll dieser Sohn das Leben haben und einen Namen: Marchese von Villavenetia. Der Marchese von Villavenetia. Der Marchese ist ein schlechter Schüler. Er liebt, den Falken auf der Hand zu fühlen. Sein Lehrer sagt ihm einmal (und der Lehrer weiß nicht viel von der Jagd): »Wie, wenn der Falke einmal nicht wiederkehrt?« »Dann, dann - « sagt der Zögling sehr erregt - »dann werd ich selbst Flügel spüren.« Und er wird ganz rot, als ob er sich verraten hätte. Später, um sein fünfzehntes Jahr, wird er eine Weile still und fleißig. Er liebt die schöne Herzogin Julia von Este. Ein Jahr lang liebt er sie so, - dann geht er und befriedigt sich bei einer blonden Magd - und hat die Liebe vergessen. jetzt beginnen rasche, rauschende Tage. Sein Degen hat selten Nacht. Er kommt nach Venedig und muß an einen Garten denken. Ein Jahr lang sucht er diesen Garten, dann findet er Valenzia. Sie ist groß, golden und stolz. Er kann sie nicht zugleich mit den anderen denken. Er denkt sie überhaupt nicht, er küßt sie. Aber sie hat einen Geliebten. Man sagt sogar, daß sie einen Gatten hat, aber der Geliebte ist gefährlicher. Der Marchese kennt ihn längst. Es gibt seit einem Jahrhundert überall Bilder von ihm. Sie hängen in den dunkelsten Sälen, gewöhnlich über einer Tür, damit die Kinder sie nicht sehen sollen. Sie haben den bösen Blick. Und der Marchese fühlt sich verfolgt davon. Er sieht in jedem Weinglas gespiegelt: diese dunkle, geheimnisvolle, gedrängte Stirn und die geraden schwarzen Brauen an ihrem Saum. Er wird schreckhaft. Er zuckt bei tausend Gelegenheiten zusammen und lacht dann sehr laut. Eines Nachts, da der Vorhang des breiten Bettes sich gerührt hat, springt er aus dem Fenster des Palazzo der Signora in den Kanal. Er hört Schüsse, kommt aber bis zur Piazzetta, wo Fischer ihm helfen.\nZehn Jahre später fährt er nach Venedig, nur um sich jenes Fenster anzusehen. Es ist von feinstem Stil, ein Spitzbogen mit Zierat, nicht überladen. Das befriedigt ihn. Er ist noch jung, Sekretär des Kardinals Borromeo, und erkennt Venedig wieder. Bei einem Feste sieht er auch Valenzia. Sie ist ganz wie damals, sie kommt auf ihn zu: aber er ist ein anderer, er verneigt sich sehr tief und zieht sich mit dem Senator Gritti zu einem ernsten Gespräch zurück. Gerade vor Ostern wird er Kardinal. Am Auferstehungstag fühlt er die schwere violette Seide von seinen gesunden Schultern rauschen. Er freut sich an den schönen Knaben, die ihm die Schleppe tragen, er freut sich an dem Licht, an dem Glanz, und der Gesang steigt ihm zu Kopf wie Duft von Weinbergen. Über ein Jahr bei den Osterfesten fehlt der Kardinal. Er lebt auf einem seiner Güter und schmückt seine Gärten. Am großen Sonntag sitzt er über den Plänen eines neuen Schlosses. Vielleicht läßt San-Sovin sich noch erbitten, es zu bauen, Am Abend fällt einem Günstling ein, daß Ostern ist. Der Kardinal lacht. Man rüstet rasch ein Fest, und die Mädchen aus Carmagnola kommen, zweimal fünfzig Mädchen.\nDer Kardinal hat große Gastlichkeit. Überall erzählt man von ihm. Das Volk hält ihn für einen Zauberer. Zwanzig Maler sind um ihn, zehn Bildhauer arbeiten in seinen Parken, und jeder Dichter vergleicht ihn mit irgendeinem Gott. Eines Tages empfängt er Valenzia. Die Signora ist strahlender als je. Er gibt ihr täglich Feste. Mitten im schönsten wird dem Kardinal durch einen reitenden Boten ein Brief gebracht. Er liest, wird blaß und reicht ihn Valenzia. Am Abend reist die Signora ab nach Rom. Sie hat Freunde dort unter den Kardinälen. - In der Nacht erwacht der Kardinal. Er liest noch einmal den Brief, und sein liebster Knabe hält ihm die Fackel dazu. Die letzten Worte sind: Der Papst ist tot.\nDrei Tage später erhält der Kardinal einen Brief von der alten Herzogin von Ascoli, seiner Mutter, aus Rom. Es ist der erste Brief von ihr. Sie beglückwünscht ihn zu irgend etwas. Er versteht es nicht ganz. Aber am Abend beruft man ihn dringend nach Rom. Da begreift er und nimmt sich vor, seiner Mutter einen Giorgione zu schenken.</item>
+    </string-array>
+    <string-array name="story_storyTitle">
+        <item >Der Tod</item>
+        <item >Generationen</item>
+        <item >Der Kardinal</item>
+    </string-array>
+    <string-array name="quiz_questions">
+        <item>Wie hiess Rainer Maria Rilke mit richtigem Namen?</item>
+        <item>Was hat Rainer Maria Rilke nur einmal geschrieben?</item>
+        <item>Aus welcher Sprache hat Rainer Maria Rilke Literatur übersetzt?</item>
+        <item>In welchem Jahr wurde Rainer Maria Rilke geboren?</item>
+        <item>In welcher Stadt wurde Rilke geboren?</item>
+        <item>Welche Schule besuchte Rilke nicht?</item>
+        <item>Wen heiratete Rilke 1901?</item>
+        <item>Wie hiess seine Tochter?</item>
+        <item>Wo in der Schweiz lebte Rilke nicht?</item>
+        <item>In welchem Jahr ist Rilke gestorben?</item>
+        <item>Wo liegt Rilke begraben?</item>
+    </string-array>
+    <string-array name="quiz_answersA">
+        <item>René Karl Heinz Otto Maria Johann Rilke</item>
+        <item>Roman</item>
+        <item>Französisch</item>
+        <item>1873</item>
+        <item>Wien</item>
+        <item>Handelsakademie</item>
+        <item>Lou Andreas-Salomé</item>
+        <item>Ruth</item>
+        <item>Soglio</item>
+        <item>1927</item>
+        <item>Sierre/Siders</item>
+    </string-array>
+    <string-array name="quiz_answersB">
+        <item>René Karl Wilhelm Johann Josef Maria Rilke</item>
+        <item>Aufsatz</item>
+        <item>Italienisch</item>
+        <item>1882</item>
+        <item>Salzburg</item>
+        <item>Militärschule</item>
+        <item>Clara Westhoff</item>
+        <item>Maria</item>
+        <item>Berg am Irchel</item>
+        <item>1925</item>
+        <item>Raron</item>
+    </string-array>
+    <string-array name="quiz_answersC">
+        <item>Karl Otto Rainer Maria Joseph Rilke</item>
+        <item>Erzählung</item>
+        <item>Spanisch</item>
+        <item>1875</item>
+        <item>Prag</item>
+        <item>Universiät</item>
+        <item>Josephine von Werra</item>
+        <item>Elisabeth</item>
+        <item>Raron</item>
+        <item>1931</item>
+        <item>Visp</item>
+    </string-array>
+    <integer-array name="quiz_answers">
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string name="route_msgBoxTitle">Route berechnen</string>
+    <string name="route_msgBoxMsg">Wirklich neue Route berechnen! Es kann eine Weile dauern</string>
+    <string name="route_msgBoxYes">Ja</string>
+    <string name="route_msgBoxNo">Nein</string>
 </resources>
