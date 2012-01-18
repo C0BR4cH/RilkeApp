@@ -126,6 +126,7 @@ public class News extends ListActivity {
 		throws SAXException {
 			// save xml text into a string
 			String strCharacters = new String(ch, start, length);
+			strCharacters = android.text.Html.fromHtml(strCharacters).toString();
 			// title in title array
 			if (state == stateTitle)
 			{
