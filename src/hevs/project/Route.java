@@ -56,7 +56,7 @@ public class Route extends MapActivity
 		mapController.setZoom(17); // Zoom 1 is world view
 		
 		// Init GeoPoints
-		currentLoc=new GeoPoint(0,0);
+		currentLoc=new GeoPoint(46949017,7439286); // GeoPoint fix: Bern Trainstation at 46.949017,7.439286
 		mercier=new GeoPoint(46294116,7527538); // GeoPoint fix: Chateau Mercier at 46.294116,7.52753
 		mapController.animateTo(mercier);
 		
