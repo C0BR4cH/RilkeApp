@@ -106,7 +106,7 @@
 		    </LinearLayout>
 		    <Button
 		  			android:layout_height="fill_parent"
-		        	android:text="@string/quiz_home"
+		        	android:text="@string/story_Home"
 		        	android:layout_width="wrap_content"
 		        	android:layout_gravity="center"
 		        	android:id="@+id/btnHome" />

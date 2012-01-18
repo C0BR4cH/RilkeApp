@@ -115,21 +115,20 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f040000;
-        public static final int gallery_Title=0x7f040010;
+        public static final int gallery_Title=0x7f04000f;
         public static final int gallery_iconDescription=0x7f040003;
         public static final int menu_Title=0x7f040001;
         public static final int menu_footer=0x7f040002;
-        public static final int news_PostTitle=0x7f04000f;
-        public static final int news_Title=0x7f04000e;
+        public static final int news_PostTitle=0x7f04000e;
+        public static final int news_Title=0x7f04000d;
         public static final int poetry_Title=0x7f040008;
         public static final int quiz_again=0x7f04000b;
-        public static final int quiz_correct=0x7f04000d;
-        public static final int quiz_home=0x7f04000c;
+        public static final int quiz_correct=0x7f04000c;
         public static final int quiz_result=0x7f04000a;
-        public static final int route_msgBoxMsg=0x7f040012;
-        public static final int route_msgBoxNo=0x7f040014;
-        public static final int route_msgBoxTitle=0x7f040011;
-        public static final int route_msgBoxYes=0x7f040013;
+        public static final int route_msgBoxMsg=0x7f040011;
+        public static final int route_msgBoxNo=0x7f040013;
+        public static final int route_msgBoxTitle=0x7f040010;
+        public static final int route_msgBoxYes=0x7f040012;
         public static final int story_Home=0x7f040006;
         public static final int story_Next=0x7f040005;
         public static final int story_Previous=0x7f040004;

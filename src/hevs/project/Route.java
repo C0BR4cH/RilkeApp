@@ -124,6 +124,8 @@ public class Route extends MapActivity
 		mapView.invalidate();
 		mapController.animateTo(new GeoPoint((currentLoc.getLatitudeE6()+mercier.getLatitudeE6())/2,
 				(currentLoc.getLongitudeE6()+mercier.getLongitudeE6())/2));
+		mapController.zoomToSpan(Math.abs(currentLoc.getLatitudeE6()-mercier.getLatitudeE6()),
+				Math.abs(currentLoc.getLongitudeE6()-mercier.getLongitudeE6()));
 	}
 
 	private void drawPath(GeoPoint src,GeoPoint dest, int color, MapView mapView)
