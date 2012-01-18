@@ -135,6 +135,10 @@
         <item>1</item>
         <item>2</item>
     </integer-array>
+    <string name="route_msgBoxTitle">Calculate Route</string>
+    <string name="route_msgBoxMsg">Realy calculate new route? This could take some time!</string>
+    <string name="route_msgBoxYes">Yes</string>
+    <string name="route_msgBoxNo">No</string>
     
     
 </resources>

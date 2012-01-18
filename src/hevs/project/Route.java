@@ -108,8 +108,6 @@ public class Route extends MapActivity
 			public void onClick(DialogInterface dialog,int which)
 			{
 				drawPath(currentLoc,mercier,Color.RED,mapView);
-				mapController.animateTo(new GeoPoint((currentLoc.getLatitudeE6()+mercier.getLatitudeE6())/2,
-						(currentLoc.getLongitudeE6()+mercier.getLongitudeE6())/2));
 			}	
 		});
 		msgBox.setButton2("No",new DialogInterface.OnClickListener()
@@ -121,6 +119,8 @@ public class Route extends MapActivity
 		});
 		msgBox.show();
 		mapView.invalidate();
+		mapController.animateTo(new GeoPoint((currentLoc.getLatitudeE6()+mercier.getLatitudeE6())/2,
+				(currentLoc.getLongitudeE6()+mercier.getLongitudeE6())/2));
 	}
 
 	private void drawPath(GeoPoint src,GeoPoint dest, int color, MapView mapView)

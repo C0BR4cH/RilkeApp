@@ -127,6 +127,10 @@ public final class R {
         public static final int quiz_correct=0x7f04000d;
         public static final int quiz_home=0x7f04000c;
         public static final int quiz_result=0x7f04000a;
+        public static final int route_msgBoxMsg=0x7f040013;
+        public static final int route_msgBoxNo=0x7f040015;
+        public static final int route_msgBoxTitle=0x7f040012;
+        public static final int route_msgBoxYes=0x7f040014;
         public static final int story_Home=0x7f040006;
         public static final int story_Next=0x7f040005;
         public static final int story_Previous=0x7f040004;
