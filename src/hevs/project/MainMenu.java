@@ -92,6 +92,8 @@ public class MainMenu extends Activity
 		{  
 			if(position==0)
 			{
+				Intent news=new Intent(MainMenu.this,News.class);
+				MainMenu.this.startActivity(news);
 			}
 			if(position==1)
 			{
