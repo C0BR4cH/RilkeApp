@@ -3,43 +3,39 @@
     android:id="@+id/LinearLayout1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
-    <TableRow
-        android:id="@+id/tableRow1"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/menu_iconDescription"
-            android:src="@drawable/icon" />
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_Title"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
-    </TableRow>
+        android:layout_height="wrap_content"
+        android:text="@string/menu_Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" 
+        android:textColor="#FF6600"/>
+
     <GridView
         android:id="@+id/GridView_Buttons"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:gravity="center_horizontal"
-        android:numColumns="2" 
+        android:layout_weight="1"
         android:background="@drawable/rilke_background"
-        android:layout_weight="1">
+        android:gravity="center_horizontal|center_vertical"
+        android:numColumns="2" >
     </GridView>
+
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal" >
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/menu_footer"/>
+            android:text="@string/menu_footer" />
     </LinearLayout>
+
 </LinearLayout>
