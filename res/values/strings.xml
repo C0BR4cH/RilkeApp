@@ -3,7 +3,8 @@
     <string name="app_name">Rilke Festival Application</string>
     <string name="menu_Title">Rilke Festival</string>
     <string name="menu_footer">2012 Hevs</string>
-    <string name="gallery_iconDescription">Rilke Images</string><string name="story_Previous">Prev</string>
+    <string name="gallery_iconDescription">Rilke Images</string>
+    <string name="story_Previous">Prev</string>
     <string name="story_Next">Next</string>
     <string name="story_Home">Home</string>
     <string name="story_Title">Stories</string>
@@ -14,7 +15,8 @@
     <string name="quiz_home">Home</string>
     <string name="quiz_correct">Correct:</string>
     <string name="news_Title">News</string>
-    <string name="news_PostTitle">Post title</string><string name="news_Back">Back</string><string name="gallery_Title">Gallery</string>
+    <string name="news_PostTitle">Post title</string>
+    <string name="gallery_Title">Gallery</string>
     <declare-styleable name="gallery_gallery">
         <attr name="android:galleryItemBackground" />
     </declare-styleable>
@@ -30,12 +32,12 @@
     </string-array>
     <string-array name="poetry_author">
         <item >22.2.1898, Berlin-Wilmersdorf</item>
-        <item >Sommer/Herbst 1898, ?</item>
+        <item >summer/automn 1898, ?</item>
         <item >11.7.1906, Paris</item>
         <item >21.7.1907, Paris</item>
-        <item >Anfang Dezember 1911, Duino</item>
-        <item >Winter 1913/14, Paris</item>
-        <item >April 1914, Paris</item>
+        <item >early decembre 1911, Duino</item>
+        <item >winter 1913/14, Paris</item>
+        <item >april 1914, Paris</item>
     </string-array>
     <string-array name="poetry_Text">
         <item >Ich ließ meinen Engel lange nicht los,\nund er verarmte mir in den Armen\nund wurde klein, und ich wurde groß:\nund auf einmal war ich das Erbarmen,\nund er eine zitternde Bitte bloß.\nDa hab ich ihm seine Himmel gegeben, -\nund er ließ mir das Nahe, daraus er entschwand;\ner lernte das Schweben, ich lernte das Leben,\nund wir haben langsam einander erkannt&#x2026;</item>
@@ -139,6 +141,4 @@
     <string name="route_msgBoxMsg">Realy calculate new route? This could take some time!</string>
     <string name="route_msgBoxYes">Yes</string>
     <string name="route_msgBoxNo">No</string>
-    
-    
 </resources>
