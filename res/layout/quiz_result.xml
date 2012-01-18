@@ -1,77 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:gravity="center_horizontal">
-		<LinearLayout
-			xmlns:android="http://schemas.android.com/apk/res/android"
-			android:orientation="horizontal"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="left">
-				<TextView
-					android:layout_width="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceLarge"
-					android:layout_height="25px"
-					android:id="@+id/txtRTitle"
-					android:text="Rilke Quiz" />
-		</LinearLayout>
+	android:layout_weight="1">
 		<LinearLayout
 			xmlns:android="http://schemas.android.com/apk/res/android"
 			android:orientation="vertical"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:gravity="center_vertical">
-				<TextView 
-					android:layout_width="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceLarge"
-					android:layout_height="25px"
-					android:id="@+id/txtRTitle"
-					android:text="@string/quiz_result" 
-					android:layout_gravity="center"/>
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="center_horizontal">
 				<LinearLayout
 					xmlns:android="http://schemas.android.com/apk/res/android"
 					android:orientation="horizontal"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center_horizontal">
+					android:layout_gravity="left">
 						<TextView
 							android:layout_width="wrap_content"
 							android:textAppearance="?android:attr/textAppearanceLarge"
 							android:layout_height="wrap_content"
-							android:id="@+id/txtRCorrect"
-							android:text="@string/quiz_correct" />
-					    <TextView
-					    	android:layout_width="wrap_content"
-					    	android:textAppearance="?android:attr/textAppearanceLarge"
-					    	android:layout_height="wrap_content"
-					    	android:id="@+id/txtRCorrectNum"
-					    	android:text="0" />
-					    <TextView
-					    	android:layout_width="wrap_content"
-					    	android:textAppearance="?android:attr/textAppearanceLarge"
-					    	android:layout_height="50px"
-					    	android:id="@+id/txtRCorrectMax"
-					    	android:text="/11" />
-	  		</LinearLayout>
+							android:id="@+id/txtRTitle"
+							android:text="Rilke Quiz" />
+				</LinearLayout>
+				<LinearLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical">
+						<TextView 
+							android:layout_width="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceLarge"
+							android:layout_height="wrap_content"
+							android:id="@+id/txtRTitle"
+							android:text="@string/quiz_result" 
+							android:layout_gravity="center"/>
+						<LinearLayout
+							xmlns:android="http://schemas.android.com/apk/res/android"
+							android:orientation="horizontal"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal">
+								<TextView
+									android:layout_width="wrap_content"
+									android:textAppearance="?android:attr/textAppearanceLarge"
+									android:layout_height="wrap_content"
+									android:id="@+id/txtRCorrect"
+									android:text="@string/quiz_correct" />
+							    <TextView
+							    	android:layout_width="wrap_content"
+							    	android:textAppearance="?android:attr/textAppearanceLarge"
+							    	android:layout_height="wrap_content"
+							    	android:id="@+id/txtRCorrectNum"
+							    	android:text="0" />
+							    <TextView
+							    	android:layout_width="wrap_content"
+							    	android:textAppearance="?android:attr/textAppearanceLarge"
+							    	android:layout_height="wrap_content"
+							    	android:id="@+id/txtRCorrectMax"
+							    	android:text="/11" />
+			  		</LinearLayout>
+				</LinearLayout>
+			  	<LinearLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal">
+			  			<Button 
+			  				android:text="@string/quiz_home"
+			  				android:id="@+id/btnRHome"
+			  				android:layout_width="wrap_content"
+			  				android:layout_height="wrap_content" />
+			  			<Button
+			  				android:text="@string/quiz_again"
+			  				android:id="@+id/btnAgain"
+			  				android:layout_width="wrap_content"
+			  				android:layout_height="wrap_content" />
+			  	</LinearLayout> 
 		</LinearLayout>
-	  	<LinearLayout
-			xmlns:android="http://schemas.android.com/apk/res/android"
-			android:orientation="horizontal"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:gravity="center_horizontal">
-	  			<Button 
-	  				android:text="@string/quiz_home"
-	  				android:id="@+id/btnRHome"
-	  				android:layout_width="wrap_content"
-	  				android:layout_height="wrap_content" />
-	  			<Button
-	  				android:text="@string/quiz_again"
-	  				android:id="@+id/btnAgain"
-	  				android:layout_width="wrap_content"
-	  				android:layout_height="wrap_content" />
-	  	</LinearLayout> 
-</LinearLayout>
+</ScrollView>
