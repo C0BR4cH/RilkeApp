@@ -127,4 +127,5 @@
     <declare-styleable name="gallery_gallery">
         <attr name="android:galleryItemBackground" />
     </declare-styleable>
+    <string name="sketch_home">Home</string> 
 </resources>

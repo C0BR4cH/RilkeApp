@@ -83,9 +83,10 @@ public final class R {
         public static final int main_menu=0x7f030001;
         public static final int quiz=0x7f030002;
         public static final int quiz_result=0x7f030003;
-        public static final int sketch=0x7f030004;
-        public static final int stories_poetry=0x7f030005;
-        public static final int video=0x7f030006;
+        public static final int route=0x7f030004;
+        public static final int sketch=0x7f030005;
+        public static final int stories_poetry=0x7f030006;
+        public static final int video=0x7f030007;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
@@ -98,6 +99,7 @@ public final class R {
         public static final int quiz_correct=0x7f04000d;
         public static final int quiz_home=0x7f04000c;
         public static final int quiz_result=0x7f04000a;
+        public static final int sketch_home=0x7f04000f;
         public static final int story_Home=0x7f040006;
         public static final int story_Next=0x7f040005;
         public static final int story_Previous=0x7f040004;
