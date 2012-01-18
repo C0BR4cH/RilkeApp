@@ -27,8 +27,8 @@ public class Gallery extends Activity{
 
 		//create variables and set references
 		image = (ImageView) findViewById(R.id.test_image);
-		imageIds = new Integer[]{R.drawable.rilke_background, R.drawable.rilke_bg,
-				R.drawable.rilke_plakat1, R.drawable.rilke_plakat2, R.drawable.rilke_plakat3};
+		imageIds = new Integer[]{R.drawable.rilke_background, R.drawable.rilke_portrait,
+				R.drawable.rilke_portrait2, R.drawable.rilke_stamp, R.drawable.rilke_stone};
 		gallerylistener = new GalleryListener();
 		buttonListener = new ButtonListener();
 		btnHome = (Button) findViewById(R.id.gallery_btnHome);
