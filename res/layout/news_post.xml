@@ -50,10 +50,10 @@
             android:layout_height="fill_parent"
             android:text="@string/story_Previous" />
         <Button
-            android:id="@+id/news_btnBack"
+            android:id="@+id/news_btnHome"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:text="@string/news_Back" />
+            android:text="@string/story_Home" />
         <Button
             android:id="@+id/news_btnNext"
             android:layout_width="wrap_content"
