@@ -30,7 +30,7 @@ public class News extends Activity{
 		TextView result = (TextView)findViewById(R.id.news_txt);
 
 		try {
-			URL rssUrl = new URL("http://feeds.feedburner.com/Android-er?format=xml");
+			URL rssUrl = new URL("http://wordpress.pre-view.ch/feed/");
 			SAXParserFactory mySAXParserFactory = SAXParserFactory.newInstance();
 			SAXParser mySAXParser = mySAXParserFactory.newSAXParser();
 			XMLReader myXMLReader = mySAXParser.getXMLReader();
