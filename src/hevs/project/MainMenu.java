@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.Toast;
 
 public class MainMenu extends Activity
 {
@@ -22,14 +25,29 @@ public class MainMenu extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_menu);
-		
+
 		//fill array with all titles
 		res = getResources();
 		buttons = res.getStringArray(R.array.menu_titles);
-		
+
 		//fill gridview with buttons
 		GridView gridview = (GridView) findViewById(R.id.GridView_Buttons);
 		gridview.setAdapter(new ButtonAdapter(this)); 
+	}
+	
+	//check if user has internet connection
+	public boolean isOnline() {
+		ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo netInfo = cm.getActiveNetworkInfo();
+		if (netInfo != null && netInfo.isConnectedOrConnecting()) {
+			return true;
+		}
+		return false;
+	}
+	
+	//Display a message
+	public void MessageBox(String message){
+	    Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
 	}
 
 	public class ButtonAdapter extends BaseAdapter {  
@@ -92,8 +110,13 @@ public class MainMenu extends Activity
 		{  
 			if(position==0)
 			{
-				Intent news=new Intent(MainMenu.this,News.class);
-				MainMenu.this.startActivity(news);
+				if(isOnline()){
+					Intent news=new Intent(MainMenu.this,News.class);
+					MainMenu.this.startActivity(news);
+				}else
+				{
+					MessageBox("No Internet avaiable!");
+				}
 			}
 			if(position==1)
 			{
