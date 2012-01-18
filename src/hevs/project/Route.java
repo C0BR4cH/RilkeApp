@@ -72,7 +72,7 @@ public class Route extends MapActivity
 
 		// Init MapController
 		mapController=mapView.getController();
-		mapController.setZoom(12); // Zoom 1 is world view
+		mapController.setZoom(10); // Zoom 1 is world view
 
 		// Init GeoPoints
 		currentLoc=new GeoPoint(46227561,7358862); // GeoPoint fix: Sion Trainstation at 46.227561,7.358862
@@ -104,12 +104,14 @@ public class Route extends MapActivity
 		
 		msgBox=new AlertDialog.Builder(this).create();
 		msgBox.setTitle("Calculate Route");
-		msgBox.setMessage("Realy calculate new route?/nThis could take some time!");
+		msgBox.setMessage("Realy calculate new route? This could take some time!");
 		msgBox.setButton("Yes",new DialogInterface.OnClickListener()
 		{
 			public void onClick(DialogInterface dialog,int which)
 			{
 				drawPath(currentLoc,mercier,Color.RED,mapView);
+				mapController.animateTo(new GeoPoint((currentLoc.getLatitudeE6()+mercier.getLatitudeE6())/2,
+						(currentLoc.getLongitudeE6()+mercier.getLongitudeE6())/2));
 			}	
 		});
 		msgBox.setButton2("No",new DialogInterface.OnClickListener()
