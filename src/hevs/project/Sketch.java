@@ -28,6 +28,7 @@ public class Sketch extends Activity
 		 // Init Listener, Buttons and add Listener to Buttons
 		btnListener=new ButtonListener();
 		btnHome=(Button)findViewById(R.id.btnHome);
+		btnHome.setOnClickListener(btnListener);
 	}
 	
 	private class ButtonListener implements OnClickListener
