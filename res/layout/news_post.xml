@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal" 
+    android:layout_gravity="right">
+    <TextView
+        android:id="@+id/news_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/news_Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="#FF6600"
+        android:lineSpacingExtra="5dp"/>
+    <TextView
+        android:id="@+id/news_PostTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/news_PostTitle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:lineSpacingExtra="5dp"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/news_NewsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@array/story_text" 
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:lineSpacingExtra="5dp"/>
+            </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/news_btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/story_Previous" />
+        <Button
+            android:id="@+id/news_btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/news_Back" />
+        <Button
+            android:id="@+id/news_btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/story_Next" />
+    </LinearLayout>
+</LinearLayout>
