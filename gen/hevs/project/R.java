@@ -71,7 +71,7 @@ public final class R {
         public static final int news_NewsText=0x7f06000b;
         public static final int news_PostTitle=0x7f06000a;
         public static final int news_Title=0x7f060009;
-        public static final int news_btnBack=0x7f06000d;
+        public static final int news_btnHome=0x7f06000d;
         public static final int news_btnNext=0x7f06000e;
         public static final int news_btnPrev=0x7f06000c;
         public static final int story_StoryText=0x7f060033;

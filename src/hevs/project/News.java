@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -17,22 +16,20 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class News extends ListActivity {
 
-	private List<String> item = new ArrayList<String>();
-	private List<String> cont = new ArrayList<String>();
+	private ArrayList<String> item = new ArrayList<String>();
+	private ArrayList<String> cont = new ArrayList<String>();
 	private ListView lv;
 
-	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -70,9 +67,16 @@ public class News extends ListActivity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				// When clicked, show a toast with the TextView text
-				Toast.makeText(getApplicationContext(), cont.get(position),
-						Toast.LENGTH_SHORT).show();
+				//when clicked open new activity for a single post
+				Bundle bundle = new Bundle();
+				Intent news_post = new Intent(News.this,NewsPost.class);
+				bundle.putStringArrayList("title", item);
+				bundle.putStringArrayList("content", cont);	
+				bundle.putInt("position", position);
+				news_post.putExtras(bundle);
+				News.this.startActivity(news_post);
+				//close news activity
+				finish();
 			}
 		});
 	}
@@ -97,7 +101,7 @@ public class News extends ListActivity {
 		@Override
 		public void startElement(String uri, String localName, String qName,
 				Attributes attributes) throws SAXException {
-			// TODO Auto-generated method stub
+			// change state for each xml node
 			if (localName.equalsIgnoreCase("title"))
 			{
 				state = stateTitle;
@@ -113,19 +117,21 @@ public class News extends ListActivity {
 		@Override
 		public void endElement(String uri, String localName, String qName)
 		throws SAXException {
-			// TODO Auto-generated method stub
+			//when finished set state to unknown
 			state = stateUnknown;
 		}
 
 		@Override
 		public void characters(char[] ch, int start, int length)
 		throws SAXException {
-			// TODO Auto-generated method stub
+			// save xml text into a string
 			String strCharacters = new String(ch, start, length);
+			// title in title array
 			if (state == stateTitle)
 			{
 				item.add(strCharacters);
 			}
+			// description in content array
 			if (state == stateContent)
 			{
 				cont.add(strCharacters);
