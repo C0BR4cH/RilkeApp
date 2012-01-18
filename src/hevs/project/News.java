@@ -60,7 +60,7 @@ public class News extends ListActivity {
 			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			finish();
 		}
 
 		lv.setOnItemClickListener(new OnItemClickListener() {
