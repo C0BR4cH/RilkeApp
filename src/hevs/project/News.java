@@ -3,6 +3,8 @@ package hevs.project;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -14,28 +16,26 @@ import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
 
-import android.app.Activity;
+import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class News extends Activity{
-	String streamTitle = "";
-	Button btnHome;
-	ButtonListener buttonlistener;
+public class News extends ListActivity {
+
+	private List<String> item = new ArrayList<String>();
+	private List<String> cont = new ArrayList<String>();
+	private ListView lv;
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.news);
-
-		TextView result = (TextView)findViewById(R.id.news_txt);
-		btnHome = (Button) findViewById(R.id.news_btnHome);
-		buttonlistener = new ButtonListener();
-		btnHome.setOnClickListener(buttonlistener);
 
 		try {
 			URL rssUrl = new URL("http://wordpress.pre-view.ch/feed/");
@@ -47,62 +47,51 @@ public class News extends Activity{
 			InputSource myInputSource = new InputSource(rssUrl.openStream());
 			myXMLReader.parse(myInputSource);
 
-			result.setText(streamTitle);
+			setListAdapter(new ArrayAdapter<String>(this, R.layout.news, item));
+
+			lv = getListView();
+			lv.setTextFilterEnabled(true);
 
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			result.setText("Cannot connect RSS!");
 		} catch (ParserConfigurationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			result.setText("Cannot connect RSS!");
 		} catch (SAXException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			result.setText("Cannot connect RSS!");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			result.setText("Cannot connect RSS!");
 		}
+
+		lv.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				// When clicked, show a toast with the TextView text
+				Toast.makeText(getApplicationContext(), cont.get(position),
+						Toast.LENGTH_SHORT).show();
+			}
+		});
 	}
 
-	//Button handler
-	public class ButtonListener implements OnClickListener{
-
-		@Override
-		public void onClick(View v)
-		{
-			//show previous story or poetry
-			if(v==findViewById(R.id.news_btnHome))
-				finish();
-		}
-	}
-
-	//RSS Handler
 	private class RSSHandler extends DefaultHandler
 	{
 		final int stateUnknown = 0;
 		final int stateTitle = 1;
+		final int stateContent = 2;
 		int state = stateUnknown;
-
-		int numberOfTitle = 0;
-		String strTitle = "";
-		String strElement = "";
 
 		@Override
 		public void startDocument() throws SAXException {
 			// TODO Auto-generated method stub
-			strTitle = "--- Start Document ---\n";
 		}
 
 		@Override
 		public void endDocument() throws SAXException {
 			// TODO Auto-generated method stub
-			strTitle += "--- End Document ---";
-			streamTitle = "Number Of Title: " + String.valueOf(numberOfTitle) + "\n"
-			+ strTitle;
 		}
 
 		@Override
@@ -112,23 +101,19 @@ public class News extends Activity{
 			if (localName.equalsIgnoreCase("title"))
 			{
 				state = stateTitle;
-				strElement = "Title: ";
-				numberOfTitle++;
 			}
-			else
+			else 
+			if(localName.equalsIgnoreCase("description"))
 			{
+				state = stateContent;
+			}else
 				state = stateUnknown;
-			}
 		}
 
 		@Override
 		public void endElement(String uri, String localName, String qName)
 		throws SAXException {
 			// TODO Auto-generated method stub
-			if (localName.equalsIgnoreCase("title"))
-			{
-				strTitle += strElement + "\n";
-			}
 			state = stateUnknown;
 		}
 
@@ -139,9 +124,12 @@ public class News extends Activity{
 			String strCharacters = new String(ch, start, length);
 			if (state == stateTitle)
 			{
-				strElement += strCharacters;
+				item.add(strCharacters);
+			}
+			if (state == stateContent)
+			{
+				cont.add(strCharacters);
 			}
 		}
-
 	}
 }

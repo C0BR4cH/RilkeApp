@@ -14,7 +14,7 @@
     <string name="quiz_home">Home</string>
     <string name="quiz_correct">Correct:</string>
     <string name="news_Title">News</string>
-    <string name="gallery_Title">Gallery</string>
+    <string name="news_PostTitle">Post title</string><string name="news_Back">Back</string><string name="gallery_Title">Gallery</string>
     <declare-styleable name="gallery_gallery">
         <attr name="android:galleryItemBackground" />
     </declare-styleable>
@@ -135,4 +135,6 @@
         <item>1</item>
         <item>2</item>
     </integer-array>
+    
+    
 </resources>
