@@ -32,6 +32,7 @@ import com.google.android.maps.Projection;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -57,11 +58,13 @@ public class Route extends MapActivity
 	private RilkeOverlay ovRilke;
 	private CurrentLocOverlay ovYou;
 	private List<Overlay> overlayList;
+	private Resources res;
 
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.route);
+		res=getResources();
 
 		// Init MapView and configure it
 		mapView=(MapView)findViewById(R.id.mapview);
@@ -101,16 +104,16 @@ public class Route extends MapActivity
 		overlayList.add(ovYou);
 		
 		msgBox=new AlertDialog.Builder(this).create();
-		msgBox.setTitle("Calculate Route");
-		msgBox.setMessage("Realy calculate new route? This could take some time!");
-		msgBox.setButton("Yes",new DialogInterface.OnClickListener()
+		msgBox.setTitle(res.getText(R.string.route_msgBoxTitle));
+		msgBox.setMessage(res.getText(R.string.route_msgBoxMsg));
+		msgBox.setButton(res.getText(R.string.route_msgBoxYes),new DialogInterface.OnClickListener()
 		{
 			public void onClick(DialogInterface dialog,int which)
 			{
 				drawPath(currentLoc,mercier,Color.RED,mapView);
 			}	
 		});
-		msgBox.setButton2("No",new DialogInterface.OnClickListener()
+		msgBox.setButton2(res.getText(R.string.route_msgBoxYes),new DialogInterface.OnClickListener()
 		{
 			public void onClick(DialogInterface dialog,int which)
 			{
