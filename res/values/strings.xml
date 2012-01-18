@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Rilke Festival Application</string>
     <string name="menu_Title">Rilke Festival</string>
-    <string name="menu_footer">(c)2012 Hevs</string>
+    <string name="menu_footer">2012 Hevs</string>
     <string name="menu_iconDescription">default icon</string><string name="story_Previous">Prev</string>
     <string name="story_Next">Next</string>
     <string name="story_Home">Home</string>
@@ -13,10 +13,9 @@
         <item>Stories</item>
         <item>Videos</item>
         <item>Poetry</item>
-        <item>Sounds</item>
+        <item>Sketch</item>
         <item>Quiz</item>
         <item>Route</item>
-        <item>Sketch</item>
     </string-array>
     <string-array name="poetry_author">
         <item >22.2.1898, Berlin-Wilmersdorf</item>
@@ -124,8 +123,5 @@
         <item>3</item>
         <item>1</item>
         <item>2</item>
-    </integer-array>
-    
-    
-    
+    </integer-array> 
 </resources>
