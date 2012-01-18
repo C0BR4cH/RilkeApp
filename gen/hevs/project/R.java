@@ -119,7 +119,6 @@ public final class R {
         public static final int gallery_iconDescription=0x7f040003;
         public static final int menu_Title=0x7f040001;
         public static final int menu_footer=0x7f040002;
-        public static final int news_Back=0x7f040015;
         public static final int news_PostTitle=0x7f04000f;
         public static final int news_Title=0x7f04000e;
         public static final int poetry_Title=0x7f040008;
