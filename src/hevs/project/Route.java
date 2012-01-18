@@ -73,7 +73,6 @@ public class Route extends MapActivity
 
 		// Init MapController
 		mapController=mapView.getController();
-		mapController.setZoom(12); // Zoom 1 is world view
 
 		// Init GeoPoints
 		currentLoc=new GeoPoint(46227561,7358862); // GeoPoint fix: Sion Trainstation at 46.227561,7.358862
@@ -101,31 +100,39 @@ public class Route extends MapActivity
 		overlayList=mapView.getOverlays();
 		overlayList.clear();
 		overlayList.add(ovRilke);
-		overlayList.add(ovYou);
-		
-		msgBox=new AlertDialog.Builder(this).create();
-		msgBox.setTitle(res.getText(R.string.route_msgBoxTitle));
-		msgBox.setMessage(res.getText(R.string.route_msgBoxMsg));
-		msgBox.setButton(res.getText(R.string.route_msgBoxYes),new DialogInterface.OnClickListener()
+
+		if(currentLoc!=null)
 		{
-			public void onClick(DialogInterface dialog,int which)
+			overlayList.add(ovYou);
+			msgBox=new AlertDialog.Builder(this).create();
+			msgBox.setTitle(res.getText(R.string.route_msgBoxTitle));
+			msgBox.setMessage(res.getText(R.string.route_msgBoxMsg));
+			msgBox.setButton(res.getText(R.string.route_msgBoxYes),new DialogInterface.OnClickListener()
 			{
-				drawPath(currentLoc,mercier,Color.RED,mapView);
-			}	
-		});
-		msgBox.setButton2(res.getText(R.string.route_msgBoxYes),new DialogInterface.OnClickListener()
+				public void onClick(DialogInterface dialog,int which)
+				{
+					drawPath(currentLoc,mercier,Color.RED,mapView);
+				}	
+			});
+			msgBox.setButton2(res.getText(R.string.route_msgBoxNo),new DialogInterface.OnClickListener()
+			{
+				public void onClick(DialogInterface dialog,int which)
+				{
+
+				}			
+			});
+			msgBox.show();
+			mapController.animateTo(new GeoPoint((currentLoc.getLatitudeE6()+mercier.getLatitudeE6())/2,
+					(currentLoc.getLongitudeE6()+mercier.getLongitudeE6())/2));
+			mapController.zoomToSpan(Math.abs(currentLoc.getLatitudeE6()-mercier.getLatitudeE6()),
+					Math.abs(currentLoc.getLongitudeE6()-mercier.getLongitudeE6()));
+		}
+		else
 		{
-			public void onClick(DialogInterface dialog,int which)
-			{
-				
-			}			
-		});
-		msgBox.show();
+			mapController.animateTo(mercier);
+			mapController.setZoom(17);
+		}
 		mapView.invalidate();
-		mapController.animateTo(new GeoPoint((currentLoc.getLatitudeE6()+mercier.getLatitudeE6())/2,
-				(currentLoc.getLongitudeE6()+mercier.getLongitudeE6())/2));
-		mapController.zoomToSpan(Math.abs(currentLoc.getLatitudeE6()-mercier.getLatitudeE6()),
-				Math.abs(currentLoc.getLongitudeE6()-mercier.getLongitudeE6()));
 	}
 
 	private void drawPath(GeoPoint src,GeoPoint dest, int color, MapView mapView)
@@ -224,7 +231,7 @@ public class Route extends MapActivity
 			this.mode = mode;
 			this.defaultColor = defaultColor;
 		}
-		
+
 		public int getMode()
 		{
 			return mode;
@@ -332,7 +339,6 @@ public class Route extends MapActivity
 			int lng=(int)(location.getLongitude()*1E6);
 			currentLoc=new GeoPoint(lat,lng);
 			refreshOverlay();
-			//			mapController.animateTo(point);
 		}
 
 		public void onProviderDisabled(String provider)
