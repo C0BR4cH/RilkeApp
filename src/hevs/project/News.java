@@ -16,10 +16,15 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class News extends Activity{
 	String streamTitle = "";
+	Button btnHome;
+	ButtonListener buttonlistener;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -28,6 +33,9 @@ public class News extends Activity{
 		setContentView(R.layout.news);
 
 		TextView result = (TextView)findViewById(R.id.news_txt);
+		btnHome = (Button) findViewById(R.id.news_btnHome);
+		buttonlistener = new ButtonListener();
+		btnHome.setOnClickListener(buttonlistener);
 
 		try {
 			URL rssUrl = new URL("http://wordpress.pre-view.ch/feed/");
@@ -60,6 +68,19 @@ public class News extends Activity{
 		}
 	}
 
+	//Button handler
+	public class ButtonListener implements OnClickListener{
+
+		@Override
+		public void onClick(View v)
+		{
+			//show previous story or poetry
+			if(v==findViewById(R.id.news_btnHome))
+				finish();
+		}
+	}
+
+	//RSS Handler
 	private class RSSHandler extends DefaultHandler
 	{
 		final int stateUnknown = 0;

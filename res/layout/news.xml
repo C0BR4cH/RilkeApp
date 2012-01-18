@@ -30,7 +30,7 @@
         android:gravity="center_horizontal"
         android:orientation="horizontal" >
         <Button
-            android:id="@+id/story_btnHome"
+            android:id="@+id/news_btnHome"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:text="@string/story_Home" />
