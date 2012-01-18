@@ -90,9 +90,11 @@ public class MainMenu extends Activity
 
 		public void onClick(View v)  
 		{  
-			if(position==0){
+			if(position==0)
+			{
 			}
-			if(position==1){
+			if(position==1)
+			{
 			}
 			if(position==2)
 			{
@@ -102,7 +104,8 @@ public class MainMenu extends Activity
 				stories.putExtras(bundle);
 				MainMenu.this.startActivity(stories);
 			}
-			if(position==3){
+			if(position==3)
+			{
 				Intent video=new Intent(MainMenu.this,Video.class);
 				MainMenu.this.startActivity(video);
 			}
@@ -124,7 +127,10 @@ public class MainMenu extends Activity
 				Intent quiz = new Intent(MainMenu.this,Quiz.class);
 				MainMenu.this.startActivity(quiz);
 			}
-			if(position==7){
+			if(position==7)
+			{
+				Intent route=new Intent(MainMenu.this,Route.class);
+				MainMenu.this.startActivity(route);
 			}
 		}  
 	} 
