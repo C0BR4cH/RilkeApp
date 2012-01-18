@@ -29,7 +29,9 @@ import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 import com.google.android.maps.Projection;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -41,6 +43,8 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 
 public class Route extends MapActivity
@@ -68,10 +72,10 @@ public class Route extends MapActivity
 
 		// Init MapController
 		mapController=mapView.getController();
-		mapController.setZoom(17); // Zoom 1 is world view
+		mapController.setZoom(12); // Zoom 1 is world view
 
 		// Init GeoPoints
-		currentLoc=new GeoPoint(46949017,7439286); // GeoPoint fix: Bern Trainstation at 46.949017,7.439286
+		currentLoc=new GeoPoint(46227561,7358862); // GeoPoint fix: Sion Trainstation at 46.227561,7.358862
 		mercier=new GeoPoint(46294116,7527538); // GeoPoint fix: Chateau Mercier at 46.294116,7.52753
 		mapController.animateTo(mercier);
 
@@ -92,11 +96,30 @@ public class Route extends MapActivity
 
 	private void refreshOverlay()
 	{
+		AlertDialog msgBox;
 		overlayList=mapView.getOverlays();
 		overlayList.clear();
 		overlayList.add(ovRilke);
 		overlayList.add(ovYou);
-		drawPath(currentLoc,mercier,Color.RED,mapView);
+		
+		msgBox=new AlertDialog.Builder(this).create();
+		msgBox.setTitle("Calculate Route");
+		msgBox.setMessage("Realy calculate new route?/nThis could take some time!");
+		msgBox.setButton("Yes",new DialogInterface.OnClickListener()
+		{
+			public void onClick(DialogInterface dialog,int which)
+			{
+				drawPath(currentLoc,mercier,Color.RED,mapView);
+			}	
+		});
+		msgBox.setButton2("No",new DialogInterface.OnClickListener()
+		{
+			public void onClick(DialogInterface dialog,int which)
+			{
+				
+			}			
+		});
+		msgBox.show();
 		mapView.invalidate();
 	}
 
