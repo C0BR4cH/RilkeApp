@@ -33,9 +33,10 @@ public final class R {
         public static final int quiz_img=0x7f020005;
         public static final int rilke_background=0x7f020006;
         public static final int rilke_bg=0x7f020007;
-        public static final int rilke_plakat1=0x7f020008;
-        public static final int rilke_plakat2=0x7f020009;
-        public static final int rilke_plakat3=0x7f02000a;
+        public static final int rilke_portrait=0x7f020008;
+        public static final int rilke_portrait2=0x7f020009;
+        public static final int rilke_stamp=0x7f02000a;
+        public static final int rilke_stone=0x7f02000b;
     }
     public static final class id {
         public static final int GridView_Buttons=0x7f060006;
