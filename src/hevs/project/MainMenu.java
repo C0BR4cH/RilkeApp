@@ -111,6 +111,11 @@ public class MainMenu extends Activity
 				poetry.putExtras(bundle);
 				MainMenu.this.startActivity(poetry);
 			}
+			if(position==8)
+			{
+				Intent sketch=new Intent(MainMenu.this,Sketch.class);
+				MainMenu.this.startActivity(sketch);
+			}
 		}  
 	} 
 }

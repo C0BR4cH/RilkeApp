@@ -27,8 +27,9 @@ public final class R {
     public static final class drawable {
         public static final int button=0x7f020000;
         public static final int icon=0x7f020001;
-        public static final int quiz_img=0x7f020002;
-        public static final int rilke_background=0x7f020003;
+        public static final int plan=0x7f020002;
+        public static final int quiz_img=0x7f020003;
+        public static final int rilke_background=0x7f020004;
     }
     public static final class id {
         public static final int GridView_Buttons=0x7f060004;
@@ -40,14 +41,15 @@ public final class R {
         public static final int btnHome=0x7f060012;
         public static final int btnRHome=0x7f060017;
         public static final int imageView1=0x7f060002;
+        public static final int imgPlan=0x7f060019;
         public static final int linearLayout2=0x7f060005;
-        public static final int story_StoryText=0x7f06001b;
-        public static final int story_StoryTitle=0x7f06001a;
-        public static final int story_Title=0x7f060019;
-        public static final int story_author=0x7f06001c;
-        public static final int story_btnHome=0x7f06001e;
-        public static final int story_btnNext=0x7f06001f;
-        public static final int story_btnPrev=0x7f06001d;
+        public static final int story_StoryText=0x7f06001c;
+        public static final int story_StoryTitle=0x7f06001b;
+        public static final int story_Title=0x7f06001a;
+        public static final int story_author=0x7f06001d;
+        public static final int story_btnHome=0x7f06001f;
+        public static final int story_btnNext=0x7f060020;
+        public static final int story_btnPrev=0x7f06001e;
         public static final int tableRow1=0x7f060001;
         public static final int textView1=0x7f060003;
         public static final int textView2=0x7f060006;
@@ -68,7 +70,8 @@ public final class R {
         public static final int main_menu=0x7f030000;
         public static final int quiz=0x7f030001;
         public static final int quiz_result=0x7f030002;
-        public static final int stories_poetry=0x7f030003;
+        public static final int sketch=0x7f030003;
+        public static final int stories_poetry=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
@@ -76,6 +79,10 @@ public final class R {
         public static final int menu_footer=0x7f040002;
         public static final int menu_iconDescription=0x7f040003;
         public static final int poetry_Title=0x7f040008;
+        public static final int quiz_again=0x7f04000b;
+        public static final int quiz_correct=0x7f040009;
+        public static final int quiz_home=0x7f04000a;
+        public static final int quiz_result=0x7f04000c;
         public static final int story_Home=0x7f040006;
         public static final int story_Next=0x7f040005;
         public static final int story_Previous=0x7f040004;
