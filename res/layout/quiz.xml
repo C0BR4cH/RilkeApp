@@ -20,7 +20,9 @@
 					        	android:layout_height="wrap_content"
 					        	android:text="Rilke Quiz"
 					        	android:layout_width="wrap_content"
-					        	android:layout_gravity="left" />
+					        	android:layout_gravity="left"
+					        	android:textStyle="bold" 
+        						android:textColor="#FF6600" />
 					        <TextView 
 					        	android:text=" "
 					    		android:textAppearance="?android:attr/textAppearanceSmall"

@@ -21,7 +21,9 @@
 							android:textAppearance="?android:attr/textAppearanceLarge"
 							android:layout_height="wrap_content"
 							android:id="@+id/txtRTitle"
-							android:text="Rilke Quiz" />
+							android:text="Rilke Quiz"
+							android:textStyle="bold" 
+        					android:textColor="#FF6600" />
 				</LinearLayout>
 				<LinearLayout
 					xmlns:android="http://schemas.android.com/apk/res/android"
