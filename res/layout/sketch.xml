@@ -9,9 +9,9 @@
 		  android:orientation="vertical"
 		  android:layout_width="wrap_content"
 		  android:layout_height="wrap_content">
-		  	<FrameLayout 
+		  	<FrameLayout
 		  		android:layout_width="wrap_content"
-		  		android_layout_height="wrap_content">
+		  		android:layout_height="wrap_content">
 			  		<ImageView
 					    android:layout_width="wrap_content"
 					    android:layout_height="wrap_content"
