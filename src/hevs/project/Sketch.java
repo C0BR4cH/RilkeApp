@@ -10,6 +10,7 @@
 package hevs.project;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -54,6 +55,19 @@ public class Sketch extends Activity
 	    return hotspots.getPixel(x, y);
 	}
 	
+	private void startActivity(int i)
+	{
+		Bundle bundle;
+		Intent intent;
+		
+		bundle=new Bundle();
+		bundle.putInt("room",0);
+		intent=new Intent(Sketch.this,SketchAgenda.class);
+		intent.putExtras(bundle);
+		Sketch.this.startActivity(intent);
+		finish();
+	}
+	
 	private class ImageListener implements OnTouchListener
 	{
 		public boolean onTouch(View v,MotionEvent event)
@@ -69,43 +83,43 @@ public class Sketch extends Activity
 				switch(col)
 				{
 					case -524544:
-						System.out.println("Room1");
+						startActivity(0);
 						return true;
 					case -16711689:
-						System.out.println("Room2");
+						startActivity(1);
 						return true;
 					case -16711936:
-						System.out.println("Room3");
+						startActivity(2);
 						return true;
 					case -65536:
-						System.out.println("Room4");
+						startActivity(3);
 						return true;
 					case -14089985:
-						System.out.println("Room5");
+						startActivity(4);
 						return true;
 					case -65281:
-						System.out.println("Room6");
+						startActivity(5);
 						return true;
 					case -30208:
-						System.out.println("Room7");
+						startActivity(6);
 						return true;
 					case -48896:
-						System.out.println("Room8");
+						startActivity(7);
 						return true;
 					case -15168000:
-						System.out.println("Room9");
+						startActivity(8);
 						return true;
 					case -7077740:
-						System.out.println("Room10");
+						startActivity(9);
 						return true;
 					case -16711813:
-						System.out.println("Room11");
+						startActivity(10);
 						return true;
 					case -65437:
-						System.out.println("Room12");
+						startActivity(11);
 						return true;
 					case -4867584:
-						System.out.println("Room13");
+						startActivity(12);
 						return true;
 					default:
 						return false;
