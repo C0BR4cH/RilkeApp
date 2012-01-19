@@ -63,6 +63,7 @@ public class Route extends MapActivity
 	private List<Overlay> overlayList;
 	private Resources res;
 	private MenuInflater inflater;
+	private GeoUpdateHandler locListener;
 
 	public void onCreate(Bundle savedInstanceState)
 	{
@@ -88,9 +89,10 @@ public class Route extends MapActivity
 		ovYou=new CurrentLocOverlay();
 		refreshOverlay();
 
-		// Init LocationManager
+		// Init LocationManager and Listener
+		locListener=new GeoUpdateHandler();
 		locationManager=(LocationManager)getSystemService(Context.LOCATION_SERVICE);
-		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,5000L,20.0f,new GeoUpdateHandler());
+		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,5000L,20.0f,locListener);
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu)
