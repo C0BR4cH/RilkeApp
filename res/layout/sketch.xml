@@ -9,11 +9,21 @@
 		  android:orientation="vertical"
 		  android:layout_width="wrap_content"
 		  android:layout_height="wrap_content">
-		    <ImageView
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:src="@drawable/plan"
-		    android:id="@+id/imgPlan" />
+		  	<FrameLayout 
+		  		android:layout_width="wrap_content"
+		  		android_layout_height="wrap_content">
+			  		<ImageView
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:background="@drawable/plan"
+					    android:id="@+id/imgPlan" />
+				    <ImageView 
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:background="@drawable/plan_col"
+					    android:id="@+id/imgPlanCol"
+					    android:visibility="invisible" />
+		  	</FrameLayout>
 		    <LinearLayout
 				xmlns:android="http://schemas.android.com/apk/res/android"
 				android:orientation="horizontal"
