@@ -58,8 +58,60 @@ public class Sketch extends Activity
 	{
 		public boolean onTouch(View v,MotionEvent event)
 		{
-			System.out.println(getColor((int)event.getX(),(int)event.getY()));
-			return true;
+			int action=event.getActionMasked();
+			int x=(int)event.getX();
+			int y=(int)event.getY();
+			int col;
+			
+			if(action==MotionEvent.ACTION_DOWN)
+			{
+				col=getColor(x,y);
+				switch(col)
+				{
+					case -524544:
+						System.out.println("Room1");
+						return true;
+					case -16711689:
+						System.out.println("Room2");
+						return true;
+					case -16711936:
+						System.out.println("Room3");
+						return true;
+					case -65536:
+						System.out.println("Room4");
+						return true;
+					case -14089985:
+						System.out.println("Room5");
+						return true;
+					case -65281:
+						System.out.println("Room6");
+						return true;
+					case -30208:
+						System.out.println("Room7");
+						return true;
+					case -48896:
+						System.out.println("Room8");
+						return true;
+					case -15168000:
+						System.out.println("Room9");
+						return true;
+					case -7077740:
+						System.out.println("Room10");
+						return true;
+					case -16711813:
+						System.out.println("Room11");
+						return true;
+					case -65437:
+						System.out.println("Room12");
+						return true;
+					case -4867584:
+						System.out.println("Room13");
+						return true;
+					default:
+						return false;
+				}
+			}
+			return false;
 		}
 	}
 	

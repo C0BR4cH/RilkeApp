@@ -145,4 +145,36 @@
     <string name="routeMenu_centYou">Gehe zu meiner Position</string>
     <string name="route_errTitle">Position nicht gefunden</string>
     <string name="route_errMsg">Deine Position konnte nicht gefunden werden!</string>
+    <string name="sketch_back">Zurück</string>
+    <string name="sketch_title">Sketch Programm</string>
+    <string-array name="sketch_subtitle">
+        <item>Raum 1: Noch kein Programm</item>
+        <item>Raum 2: Noch kein Programm</item>
+        <item>Raum 3: Noch kein Programm</item>
+        <item>Raum 4: Noch kein Programm</item>
+        <item>Raum 5: Noch kein Programm</item>
+        <item>Raum 6: Noch kein Programm</item>
+        <item>Raum 7: Noch kein Programmt</item>
+        <item>Raum 8: Noch kein Programm</item>
+        <item>Raum 9: Noch kein Programm</item>
+        <item>Raum 10: Noch kein Programmt</item>
+        <item>Raum 11: Noch kein Programm</item>
+        <item>Raum 12: Noch kein Programm</item>
+        <item>Raum 13: Noch kein Programm</item>
+    </string-array>
+    <string-array name="sketch_text">
+        <item>Empfangshalle</item>
+        <item>Küche</item>
+        <item>Büros</item>
+        <item>Sonnenzimmer</item>
+        <item>Esszimmer</item>
+        <item>Bibliothek</item>
+        <item>Halle</item>
+        <item>Wohnzimmer</item>
+        <item>Flur</item>
+        <item>Garderobe</item>
+        <item>Einganshalle</item>
+        <item>Veranda</item>
+        <item>Büro</item>
+    </string-array>
 </resources>

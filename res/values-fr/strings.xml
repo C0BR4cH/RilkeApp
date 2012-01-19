@@ -145,4 +145,36 @@
     <string name="routeMenu_centYou">chez ma position</string>
     <string name="route_errTitle">Position pas trouvé</string>
     <string name="route_errMsg">On n\'a pas trouvé votre position!</string>
+    <string name="sketch_back">Retour</string>
+    <string name="sketch_title">Sketch programme</string>
+    <string-array name="sketch_subtitle">
+        <item>Chambre 1: Pas encore de programme</item>
+        <item>Chambre 2: Pas encore de programme</item>
+        <item>Chambre 3: Pas encore de programme</item>
+        <item>Chambre 4: Pas encore de programme</item>
+        <item>Chambre 5: Pas encore de programme</item>
+        <item>Chambre 6: Pas encore de programme</item>
+        <item>Chambre 7: Pas encore de programme</item>
+        <item>Chambre 8: Pas encore de programme</item>
+        <item>Chambre 9: Pas encore de programme</item>
+        <item>Chambre 10: Pas encore de programme</item>
+        <item>Chambre 11: Pas encore de programme</item>
+        <item>Chambre 12: Pas encore de programme</item>
+        <item>Chambre 13: Pas encore de programme</item>
+    </string-array>
+    <string-array name="sketch_text">
+        <item>Perron de service</item>
+        <item>Cuisine</item>
+        <item>Office</item>
+        <item>Chambre de Soleil</item>
+        <item>Salle à manger</item>
+        <item>Bibliothèque</item>
+        <item>Hall</item>
+        <item>Salon</item>
+        <item>Entrée</item>
+        <item>Vestiaire</item>
+        <item>Perron d\'entrée</item>
+        <item>Veranda</item>
+        <item>Bureau</item>
+    </string-array>
 </resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:gravity="center_horizontal">
+  	<TextView
+		android:id="@+id/sketch_Title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/sketch_title"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textStyle="bold"
+	    android:textColor="#FF6600" />
+  	<TextView
+		android:id="@+id/sketch_SubTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="sketch_SubTitle"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+  	<ScrollView
+  		android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+        	<TextView
+				android:id="@+id/sketch_Text"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="sketch_Text"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+  	</ScrollView>
+    <LinearLayout
+    	android:orientation="horizontal"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:gravity="center_horizontal">
+		    <Button
+		    	android:text="@string/story_Home"
+	        	android:id="@+id/btnHome"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content" />
+		    <Button
+		    	android:text="@string/sketch_back"
+	        	android:id="@+id/btnBack"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -145,4 +145,36 @@
     <string name="routeMenu_centYou">Center my Location</string>
     <string name="route_errTitle">Location not found</string>
     <string name="route_errMsg">Couldn\'t find your current location!</string>
+    <string name="sketch_back">Back</string>
+    <string name="sketch_title">Sketch Agenda</string>
+    <string-array name="sketch_subtitle">
+        <item>Room 1: No agenda yet</item>
+        <item>Room 2: No agenda yet</item>
+        <item>Room 3: No agenda yet</item>
+        <item>Room 4: No agenda yet</item>
+        <item>Room 5: No agenda yet</item>
+        <item>Room 6: No agenda yet</item>
+        <item>Room 7: No agenda yet</item>
+        <item>Room 8: No agenda yet</item>
+        <item>Room 9: No agenda yet</item>
+        <item>Room 10: No agenda yet</item>
+        <item>Room 11: No agenda yet</item>
+        <item>Room 12: No agenda yet</item>
+        <item>Room 13: No agenda yet</item>
+    </string-array>
+    <string-array name="sketch_text">
+        <item>Entrance Hall</item>
+        <item>Kitchen</item>
+        <item>Office</item>
+        <item>Sun Chamber</item>
+        <item>Dining Room</item>
+        <item>Library</item>
+        <item>Hall</item>
+        <item>Living Room</item>
+        <item>Corridor</item>
+        <item>Checkroom</item>
+        <item>Lobby</item>
+        <item>Porch</item>
+        <item>Agency</item>
+    </string-array>
 </resources>

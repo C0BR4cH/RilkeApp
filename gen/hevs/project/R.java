@@ -18,6 +18,8 @@ public final class R {
         public static final int quiz_answersB=0x7f050009;
         public static final int quiz_answersC=0x7f05000a;
         public static final int quiz_questions=0x7f050007;
+        public static final int sketch_subtitle=0x7f05000c;
+        public static final int sketch_text=0x7f05000d;
         public static final int story_author=0x7f050004;
         public static final int story_storyTitle=0x7f050006;
         public static final int story_text=0x7f050005;
@@ -45,12 +47,13 @@ public final class R {
         public static final int btnA=0x7f070018;
         public static final int btnAgain=0x7f070021;
         public static final int btnB=0x7f070019;
+        public static final int btnBack=0x7f070028;
         public static final int btnC=0x7f07001a;
         public static final int btnHome=0x7f07001b;
         public static final int btnRHome=0x7f070020;
-        public static final int calcRoute=0x7f070031;
-        public static final int centMercier=0x7f070032;
-        public static final int centYou=0x7f070033;
+        public static final int calcRoute=0x7f070035;
+        public static final int centMercier=0x7f070036;
+        public static final int centYou=0x7f070037;
         public static final int gallery_Title=0x7f070001;
         public static final int gallery_btnHome=0x7f070004;
         public static final int galley_gall=0x7f070003;
@@ -59,20 +62,23 @@ public final class R {
         public static final int imgPlanCol=0x7f070024;
         public static final int linearLayout2=0x7f070007;
         public static final int mapview=0x7f070022;
-        public static final int myvideoview=0x7f07002d;
+        public static final int myvideoview=0x7f070031;
         public static final int news_NewsText=0x7f07000b;
         public static final int news_PostTitle=0x7f07000a;
         public static final int news_Title=0x7f070009;
         public static final int news_btnHome=0x7f07000d;
         public static final int news_btnNext=0x7f07000e;
         public static final int news_btnPrev=0x7f07000c;
-        public static final int story_StoryText=0x7f070027;
-        public static final int story_StoryTitle=0x7f070026;
-        public static final int story_Title=0x7f070025;
-        public static final int story_author=0x7f070028;
-        public static final int story_btnHome=0x7f07002a;
-        public static final int story_btnNext=0x7f07002b;
-        public static final int story_btnPrev=0x7f070029;
+        public static final int sketch_SubTitle=0x7f070026;
+        public static final int sketch_Text=0x7f070027;
+        public static final int sketch_Title=0x7f070025;
+        public static final int story_StoryText=0x7f07002b;
+        public static final int story_StoryTitle=0x7f07002a;
+        public static final int story_Title=0x7f070029;
+        public static final int story_author=0x7f07002c;
+        public static final int story_btnHome=0x7f07002e;
+        public static final int story_btnNext=0x7f07002f;
+        public static final int story_btnPrev=0x7f07002d;
         public static final int test_image=0x7f070002;
         public static final int textView1=0x7f070005;
         public static final int textView2=0x7f070008;
@@ -88,10 +94,10 @@ public final class R {
         public static final int txtRCorrectNum=0x7f07001e;
         public static final int txtRTitle=0x7f07001c;
         public static final int txtTitle=0x7f07000f;
-        public static final int vid_Title=0x7f07002c;
-        public static final int vid_btnHome=0x7f07002f;
-        public static final int vid_btnNext=0x7f070030;
-        public static final int vid_btnPrev=0x7f07002e;
+        public static final int vid_Title=0x7f070030;
+        public static final int vid_btnHome=0x7f070033;
+        public static final int vid_btnNext=0x7f070034;
+        public static final int vid_btnPrev=0x7f070032;
     }
     public static final class layout {
         public static final int gallery=0x7f030000;
@@ -102,8 +108,9 @@ public final class R {
         public static final int quiz_result=0x7f030005;
         public static final int route=0x7f030006;
         public static final int sketch=0x7f030007;
-        public static final int stories_poetry=0x7f030008;
-        public static final int video=0x7f030009;
+        public static final int sketch_agenda=0x7f030008;
+        public static final int stories_poetry=0x7f030009;
+        public static final int video=0x7f03000a;
     }
     public static final class menu {
         public static final int route=0x7f060000;
@@ -129,6 +136,8 @@ public final class R {
         public static final int route_msgBoxNo=0x7f040013;
         public static final int route_msgBoxTitle=0x7f040010;
         public static final int route_msgBoxYes=0x7f040012;
+        public static final int sketch_back=0x7f040019;
+        public static final int sketch_title=0x7f04001a;
         public static final int story_Home=0x7f040006;
         public static final int story_Next=0x7f040005;
         public static final int story_Previous=0x7f040004;
