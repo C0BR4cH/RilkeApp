@@ -144,6 +144,7 @@ public class Route extends MapActivity
 
 		if(currentLoc!=null)
 		{
+			ovYou=new CurrentLocOverlay();
 			overlayList.add(ovYou);
 			calcRoute();
 		}
