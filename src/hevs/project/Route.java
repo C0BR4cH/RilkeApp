@@ -93,6 +93,7 @@ public class Route extends MapActivity
 		locListener=new GeoUpdateHandler();
 		locationManager=(LocationManager)getSystemService(Context.LOCATION_SERVICE);
 		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,5000L,20.0f,locListener);
+		locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,5000L,20.0f,locListener);
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu)
