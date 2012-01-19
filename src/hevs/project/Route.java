@@ -63,20 +63,12 @@ public class Route extends MapActivity
 	private List<Overlay> overlayList;
 	private Resources res;
 	private MenuInflater inflater;
-	private MenuItem itemCalc;
-	private MenuItem itemCentMerc;
-	private MenuItem itemCentYou;
 
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.route);
 		res=getResources();
-		
-		// Init MenuItems
-		itemCalc=(MenuItem)findViewById(R.id.calcRoute);
-		itemCentMerc=(MenuItem)findViewById(R.id.centMercier);
-		itemCentYou=(MenuItem)findViewById(R.id.centYou);
 
 		// Init MapView and configure it
 		mapView=(MapView)findViewById(R.id.mapview);
@@ -108,28 +100,35 @@ public class Route extends MapActivity
 	    return true;
 	}
 	
-	public void onMenuClick(MenuItem item)
+	public boolean onOptionsItemSelected(MenuItem item)
 	{
-		if(item==itemCalc)
-			refreshOverlay();
-		if(item==itemCentMerc)
+		switch(item.getItemId())
 		{
-			mapController.animateTo(mercier);
-			mapController.setZoom(17);
-		}
-		if(item==itemCentYou)
-			if(currentLoc!=null)
-			{
-				mapController.animateTo(currentLoc);
+			case R.id.calcRoute:
+				refreshOverlay();
+				return true;
+			case R.id.centMercier:
+				mapController.animateTo(mercier);
 				mapController.setZoom(17);
-			}
-			else
-			{
-				AlertDialog errBox=new AlertDialog.Builder(this).create();
-				errBox.setTitle(res.getText(R.string.route_errTitle));
-				errBox.setMessage(res.getText(R.string.route_errMsg));
-				errBox.show();
-			}
+				return true;
+			case R.id.centYou:
+				if(currentLoc!=null)
+				{
+					mapController.animateTo(currentLoc);
+					mapController.setZoom(17);
+					return true;
+				}
+				else
+				{
+					AlertDialog errBox=new AlertDialog.Builder(this).create();
+					errBox.setTitle(res.getText(R.string.route_errTitle));
+					errBox.setMessage(res.getText(R.string.route_errMsg));
+					errBox.show();
+					return true;
+				}
+			default:
+				return super.onOptionsItemSelected(item);
+		}
 	}
 
 	protected boolean isRouteDisplayed()

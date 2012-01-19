@@ -1,40 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <group
-    	android:checkableBehavior="none"
-    	android:id="@+id/grpOne"
-    	android:visible="true"
-    	android:enabled="true">
-			<item
-				android:id="@+id/calcRoute"
-				android:checkable="false"
-				android:checked="false"
-				android:visible="true"
-				android:enabled="true"
-				android:title="@string/routeMenu_calcRoute"
-				android:onClick="onMenuClick()" />
-    </group>
-    <group
-	    android:id="@+id/grpTwo"
-	    android:checkableBehavior="none"
-	    android:visible="true"
-	    android:enabled="true">
-    		<item
-            	android:id="@+id/centMercier"
-            	android:checkable="false"
-            	android:visible="true"
-            	android:title="@string/routeMenu_centMercier"
-            	android:checked="false"
-            	android:enabled="true"
-            	android:onClick="onMenuClick()" />
-            <item
-            	android:id="@+id/centYou"
-            	android:checkable="false"
-            	android:visible="true"
-            	android:title="@string/routeMenu_centYou"
-            	android:checked="false"
-            	android:enabled="true"
-            	android:onClick="onMenuClick()" />
-    </group>    
+	<item
+		android:id="@+id/calcRoute"
+		android:checkable="false"
+		android:checked="false"
+		android:visible="true"
+		android:enabled="true"
+		android:title="@string/routeMenu_calcRoute" />
+	<item
+       	android:id="@+id/centMercier"
+       	android:checkable="false"
+       	android:visible="true"
+       	android:title="@string/routeMenu_centMercier"
+       	android:checked="false"
+       	android:enabled="true" />
+	<item
+	 	android:id="@+id/centYou"
+	 	android:checkable="false"
+	 	android:visible="true"
+	 	android:title="@string/routeMenu_centYou"
+	 	android:checked="false"
+	 	android:enabled="true" />  
 </menu>

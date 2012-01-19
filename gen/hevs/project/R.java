@@ -60,14 +60,12 @@ public final class R {
         public static final int btnThree=0x7f070026;
         public static final int btnTwelve=0x7f07002f;
         public static final int btnTwo=0x7f070025;
-        public static final int calcRoute=0x7f07003e;
-        public static final int centMercier=0x7f070040;
-        public static final int centYou=0x7f070041;
+        public static final int calcRoute=0x7f07003d;
+        public static final int centMercier=0x7f07003e;
+        public static final int centYou=0x7f07003f;
         public static final int gallery_Title=0x7f070001;
         public static final int gallery_btnHome=0x7f070004;
         public static final int galley_gall=0x7f070003;
-        public static final int grpOne=0x7f07003d;
-        public static final int grpTwo=0x7f07003f;
         public static final int imageView1=0x7f070013;
         public static final int imgPlan=0x7f070023;
         public static final int linearLayout2=0x7f070007;
