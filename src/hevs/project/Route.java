@@ -44,6 +44,9 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.LinearLayout;
 
 public class Route extends MapActivity
@@ -59,12 +62,21 @@ public class Route extends MapActivity
 	private CurrentLocOverlay ovYou;
 	private List<Overlay> overlayList;
 	private Resources res;
+	private MenuInflater inflater;
+	private MenuItem itemCalc;
+	private MenuItem itemCentMerc;
+	private MenuItem itemCentYou;
 
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.route);
 		res=getResources();
+		
+		// Init MenuItems
+		itemCalc=(MenuItem)findViewById(R.id.calcRoute);
+		itemCentMerc=(MenuItem)findViewById(R.id.centMercier);
+		itemCentYou=(MenuItem)findViewById(R.id.centYou);
 
 		// Init MapView and configure it
 		mapView=(MapView)findViewById(R.id.mapview);
@@ -88,6 +100,37 @@ public class Route extends MapActivity
 		locationManager=(LocationManager)getSystemService(Context.LOCATION_SERVICE);
 		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,new GeoUpdateHandler());
 	}
+	
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		inflater=getMenuInflater();
+	    inflater.inflate(R.menu.route,menu);
+	    return true;
+	}
+	
+	public void onMenuClick(MenuItem item)
+	{
+		if(item==itemCalc)
+			refreshOverlay();
+		if(item==itemCentMerc)
+		{
+			mapController.animateTo(mercier);
+			mapController.setZoom(17);
+		}
+		if(item==itemCentYou)
+			if(currentLoc!=null)
+			{
+				mapController.animateTo(currentLoc);
+				mapController.setZoom(17);
+			}
+			else
+			{
+				AlertDialog errBox=new AlertDialog.Builder(this).create();
+				errBox.setTitle(res.getText(R.string.route_errTitle));
+				errBox.setMessage(res.getText(R.string.route_errMsg));
+				errBox.show();
+			}
+	}
 
 	protected boolean isRouteDisplayed()
 	{
@@ -96,7 +139,6 @@ public class Route extends MapActivity
 
 	private void refreshOverlay()
 	{
-		AlertDialog msgBox;
 		overlayList=mapView.getOverlays();
 		overlayList.clear();
 		overlayList.add(ovRilke);
@@ -104,28 +146,7 @@ public class Route extends MapActivity
 		if(currentLoc!=null)
 		{
 			overlayList.add(ovYou);
-			msgBox=new AlertDialog.Builder(this).create();
-			msgBox.setTitle(res.getText(R.string.route_msgBoxTitle));
-			msgBox.setMessage(res.getText(R.string.route_msgBoxMsg));
-			msgBox.setButton(res.getText(R.string.route_msgBoxYes),new DialogInterface.OnClickListener()
-			{
-				public void onClick(DialogInterface dialog,int which)
-				{
-					drawPath(currentLoc,mercier,Color.RED,mapView);
-				}	
-			});
-			msgBox.setButton2(res.getText(R.string.route_msgBoxNo),new DialogInterface.OnClickListener()
-			{
-				public void onClick(DialogInterface dialog,int which)
-				{
-
-				}			
-			});
-			msgBox.show();
-			mapController.animateTo(new GeoPoint((currentLoc.getLatitudeE6()+mercier.getLatitudeE6())/2,
-					(currentLoc.getLongitudeE6()+mercier.getLongitudeE6())/2));
-			mapController.zoomToSpan(Math.abs(currentLoc.getLatitudeE6()-mercier.getLatitudeE6()),
-					Math.abs(currentLoc.getLongitudeE6()-mercier.getLongitudeE6()));
+			calcRoute();
 		}
 		else
 		{
@@ -133,6 +154,32 @@ public class Route extends MapActivity
 			mapController.setZoom(17);
 		}
 		mapView.invalidate();
+	}
+	
+	private void calcRoute()
+	{
+		AlertDialog msgBox=new AlertDialog.Builder(this).create();
+		msgBox.setTitle(res.getText(R.string.route_msgBoxTitle));
+		msgBox.setMessage(res.getText(R.string.route_msgBoxMsg));
+		msgBox.setButton(res.getText(R.string.route_msgBoxYes),new DialogInterface.OnClickListener()
+		{
+			public void onClick(DialogInterface dialog,int which)
+			{
+				drawPath(currentLoc,mercier,Color.RED,mapView);
+			}	
+		});
+		msgBox.setButton2(res.getText(R.string.route_msgBoxNo),new DialogInterface.OnClickListener()
+		{
+			public void onClick(DialogInterface dialog,int which)
+			{
+
+			}			
+		});
+		msgBox.show();
+		mapController.animateTo(new GeoPoint((currentLoc.getLatitudeE6()+mercier.getLatitudeE6())/2,
+				(currentLoc.getLongitudeE6()+mercier.getLongitudeE6())/2));
+		mapController.zoomToSpan(Math.abs(currentLoc.getLatitudeE6()-mercier.getLatitudeE6()),
+				Math.abs(currentLoc.getLongitudeE6()-mercier.getLongitudeE6()));
 	}
 
 	private void drawPath(GeoPoint src,GeoPoint dest, int color, MapView mapView)

@@ -140,4 +140,9 @@
     <string name="route_msgBoxMsg">Voulez-vous vraiment calculer la nouvelle route?</string>
     <string name="route_msgBoxYes">Si</string>
     <string name="route_msgBoxNo">No</string>
+    <string name="routeMenu_calcRoute">calculer la route</string>
+    <string name="routeMenu_centMercier">chez le festival</string>
+    <string name="routeMenu_centYou">chez ma position</string>
+    <string name="route_errTitle">Position pas trouvé</string>
+    <string name="route_errMsg">On n\'a pas trouvé votre position!</string>
 </resources>

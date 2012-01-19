@@ -140,4 +140,9 @@
     <string name="route_msgBoxMsg">Realy calculate new route? This could take some time!</string>
     <string name="route_msgBoxYes">Yes</string>
     <string name="route_msgBoxNo">No</string>
+    <string name="routeMenu_calcRoute">Calculate Route</string>
+    <string name="routeMenu_centMercier">Center Festival Location</string>
+    <string name="routeMenu_centYou">Center my Location</string>
+    <string name="route_errTitle">Location not found</string>
+    <string name="route_errMsg">Couldn\'t find your current location!</string>
 </resources>
