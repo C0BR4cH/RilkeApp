@@ -22,13 +22,22 @@ import android.widget.ImageView;
 public class Sketch extends Activity
 {
 	private ImageView plan;
+	private ImageView planCol;
 	private Button btnHome;
 	private OnClickListener btnListener;
+	private OnTouchListener imgListener;
 	
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.sketch);
+		
+		// Init Listener, Images and add Listener to Images
+		imgListener=new ImageListener();
+		plan=(ImageView)findViewById(R.id.imgPlan);
+		planCol=(ImageView)findViewById(R.id.imgPlanCol);
+		plan.setOnTouchListener(imgListener);
+		planCol.setOnTouchListener(imgListener);
 		
 		 // Init Listener, Buttons and add Listener to Buttons
 		btnListener=new ButtonListener();
@@ -36,12 +45,12 @@ public class Sketch extends Activity
 		btnHome.setOnClickListener(btnListener);
 	}
 	
-	private int getColour( int x, int y)
+	private int getColor(int x,int y)
 	{
-	    plan=(ImageView)findViewById(R.id.imgPlanCol);
-	    plan.setDrawingCacheEnabled(true); 
-	    Bitmap hotspots=Bitmap.createBitmap(plan.getDrawingCache()); 
-	    plan.setDrawingCacheEnabled(false);
+		Bitmap hotspots;	
+	    planCol.setDrawingCacheEnabled(true); 
+	    hotspots=Bitmap.createBitmap(planCol.getDrawingCache()); 
+	    planCol.setDrawingCacheEnabled(false);
 	    return hotspots.getPixel(x, y);
 	}
 	
@@ -49,7 +58,8 @@ public class Sketch extends Activity
 	{
 		public boolean onTouch(View v,MotionEvent event)
 		{
-			return false;
+			System.out.println(getColor((int)event.getX(),(int)event.getY()));
+			return true;
 		}
 	}
 	
