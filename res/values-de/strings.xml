@@ -15,13 +15,13 @@
     <string name="quiz_correct">Korrekt:</string>
     <string name="news_Title">News</string>
     <string name="news_PostTitle">Post Titel</string>
-    <string name="gallery_Title">Gallery</string>
+    <string name="gallery_Title">Gallerie</string>
     <declare-styleable name="gallery_gallery">
         <attr name="android:galleryItemBackground" />
     </declare-styleable>
     <string-array name="menu_titles">
         <item>News</item>
-        <item>Gallery</item>
+        <item>Gallerie</item>
         <item>Erzählungen</item>
         <item>Videos</item>
         <item>Gedichte</item>
