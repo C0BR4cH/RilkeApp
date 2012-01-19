@@ -28,5 +28,6 @@
 		<activity android:name=".News" android:label="@string/app_name"></activity>
 		<activity android:name=".NewsPost" android:label="@string/app_name"></activity>
 		<uses-library android:name="com.google.android.maps"></uses-library>
+		<activity android:name=".SketchAgenda" android:label="@string/app_name"></activity>
     </application>
 </manifest>
