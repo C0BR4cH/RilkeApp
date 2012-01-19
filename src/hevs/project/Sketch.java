@@ -61,7 +61,7 @@ public class Sketch extends Activity
 		Intent intent;
 		
 		bundle=new Bundle();
-		bundle.putInt("room",0);
+		bundle.putInt("room",i);
 		intent=new Intent(Sketch.this,SketchAgenda.class);
 		intent.putExtras(bundle);
 		Sketch.this.startActivity(intent);
