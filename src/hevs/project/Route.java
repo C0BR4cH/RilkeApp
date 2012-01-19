@@ -90,16 +90,16 @@ public class Route extends MapActivity
 
 		// Init LocationManager
 		locationManager=(LocationManager)getSystemService(Context.LOCATION_SERVICE);
-		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,new GeoUpdateHandler());
+		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,5000L,20.0f,new GeoUpdateHandler());
 	}
-	
+
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
 		inflater=getMenuInflater();
-	    inflater.inflate(R.menu.route,menu);
-	    return true;
+		inflater.inflate(R.menu.route,menu);
+		return true;
 	}
-	
+
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
 		switch(item.getItemId())
@@ -154,7 +154,7 @@ public class Route extends MapActivity
 		}
 		mapView.invalidate();
 	}
-	
+
 	private void calcRoute()
 	{
 		AlertDialog msgBox=new AlertDialog.Builder(this).create();
@@ -221,7 +221,7 @@ public class Route extends MapActivity
 				String[] lngLat = pairs[0].split(","); // lngLat[0]=longitude lngLat[1]=latitude lngLat[2]=height
 				// src
 				GeoPoint startGP = new GeoPoint((int)(Double.parseDouble(lngLat[1])*1E6),(int)(Double.parseDouble(lngLat[0])*1E6));
-//				mapView.getOverlays().add(new RoadOverlay(startGP,startGP,1));
+				//				mapView.getOverlays().add(new RoadOverlay(startGP,startGP,1));
 				GeoPoint gp1;
 				GeoPoint gp2 = startGP;
 				for(int i=1;i<pairs.length;i++) // the last one would be crash
@@ -232,7 +232,7 @@ public class Route extends MapActivity
 					gp2 = new GeoPoint((int)(Double.parseDouble(lngLat[1])*1E6),(int)(Double.parseDouble(lngLat[0])*1E6));
 					mapView.getOverlays().add(new RoadOverlay(gp1,gp2,2,color));
 				}
-//				mapView.getOverlays().add(new RoadOverlay(dest,dest, 3)); // use the default color
+				//				mapView.getOverlays().add(new RoadOverlay(dest,dest, 3)); // use the default color
 			}
 		}
 		catch (MalformedURLException e)
@@ -381,10 +381,13 @@ public class Route extends MapActivity
 	{
 		public void onLocationChanged(Location location)
 		{
-			int lat=(int)(location.getLatitude()*1E6);
-			int lng=(int)(location.getLongitude()*1E6);
-			currentLoc=new GeoPoint(lat,lng);
-			refreshOverlay();
+			if(location!=null)
+			{
+				int lat=(int)(location.getLatitude()*1E6);
+				int lng=(int)(location.getLongitude()*1E6);
+				currentLoc=new GeoPoint(lat,lng);
+				refreshOverlay();
+			}
 		}
 
 		public void onProviderDisabled(String provider)
